@@ -1,0 +1,33 @@
+.navbar {
+  grid-column: full-start/full-end;
+  height: 12vh;
+  display: grid;
+  grid-template-columns:
+    minmax(8rem, 1fr) repeat(8, minmax(min-content, 16rem))
+    minmax(8rem, 1fr);
+  background-color: firebrick;
+}
+
+.navbar__left {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  ul {
+    display: flex;
+  }
+}
+
+.navbar__right {
+  grid-column-start: 6;
+  grid-column-end: 10;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  ul {
+    display: flex;
+  }
+}
