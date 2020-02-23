@@ -5,7 +5,7 @@
   grid-template-columns:
     minmax(8rem, 1fr) repeat(8, minmax(min-content, 16rem))
     minmax(8rem, 1fr);
-  background-color: firebrick;
+  background-color: #333;
 }
 
 .navbar__left {
@@ -17,6 +17,17 @@
 
   ul {
     display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    cursor: pointer;
+
+    li {
+      padding: 0 2rem;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: white;
+    }
   }
 }
 
