@@ -3,8 +3,8 @@
   height: 6vh;
   display: grid;
   grid-template-columns:
-    minmax(8rem, 1fr) repeat(8, minmax(min-content, 16rem))
-    minmax(8rem, 1fr);
+    minmax(25rem, 1fr) repeat(8, minmax(min-content, 12rem))
+    minmax(25rem, 1fr);
   background-color: #333;
 }
 

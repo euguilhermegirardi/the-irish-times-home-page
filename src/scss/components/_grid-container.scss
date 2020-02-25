@@ -1,9 +1,9 @@
 .grid-container {
   display: grid;
   grid-template-columns:
-    [full-start] minmax(8rem, 1fr) [center-start] repeat(
+    [full-start] minmax(25rem, 1fr) [center-start] repeat(
       8,
-      minmax(min-content, 16rem)
+      minmax(min-content, 12rem)
     )
-    [center-end] minmax(8rem, 1fr) [full-end];
+    [center-end] minmax(25rem, 1fr) [full-end];
 }

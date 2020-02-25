@@ -1,0 +1,36 @@
+.news {
+  grid-column: center-start/center-end;
+  display: grid;
+  grid-template-columns: repeat(8, minmax(min-content, 12rem));
+  grid-template-rows: 15vw repeat(4, 5vw);
+
+  .news__container {
+    grid-column: 1/6;
+    display: grid;
+    grid-template-columns: repeat(8, minmax(min-content, 12rem));
+
+    .news__container--left {
+      grid-column: 1/4;
+    }
+
+    .news__container--right {
+      grid-column: 4/6;
+    }
+  }
+
+  .news__small-container {
+    grid-column: 1/6;
+    display: flex;
+  }
+
+  .news__latest {
+    grid-column: 6/9;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+
+    .news__videos {
+      display: flex;
+    }
+  }
+}
