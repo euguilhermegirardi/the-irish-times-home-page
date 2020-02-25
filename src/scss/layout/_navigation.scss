@@ -1,6 +1,6 @@
 .navbar {
   grid-column: full-start/full-end;
-  height: 12vh;
+  height: 6vh;
   display: grid;
   grid-template-columns:
     minmax(8rem, 1fr) repeat(8, minmax(min-content, 16rem))
@@ -14,21 +14,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
-  ul {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    cursor: pointer;
-
-    li {
-      padding: 0 2rem;
-      font-size: 1.5rem;
-      text-transform: uppercase;
-      color: white;
-    }
-  }
 }
 
 .navbar__right {
@@ -37,8 +22,31 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
 
-  ul {
+.navbar__links {
+  display: flex;
+  justify-content: inherit;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  cursor: pointer;
+
+  .navbar__active-item {
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: black;
+    background-color: #fad165;
+    height: 100%;
     display: flex;
+    align-items: center;
+  }
+
+  .navbar__item {
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
   }
 }
