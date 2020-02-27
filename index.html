@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="dist/minified/main.css">
+    <link rel="stylesheet" href="dist/minified/main.css?cb=1582830097561">
     <title>The Irish Times</title>
   </head>
   <body>
@@ -67,13 +67,22 @@
 
       <!-- ADVERTISEMENT -->
       <section class="advertisement">
-        <img src="" alt="">
-        <h2>ADVERTISEMENT</h2>
+        <img src="dist/minified/assets/guinness-adv.jpg" alt="GUINNESS-AD">
       </section>
 
       <!-- SLIDER -->
       <section class="slider">
-        <p>slider</p>
+        <div class="slider__slides">
+          <h3>Latest News: </h3>
+          <div class="slider__slide current">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          <div class="slider__slide">Lorem ipsum dolor sit amet.</div>
+          <div class="slider__slide">Lorem ipsum dolor sit amet consectetur.</div>
+          <div class="slider__slide">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, voluptates!</div>
+        </div>
+         <div class="controls">
+          <button class="controls__goToPrev">← Prev</button>
+          <button class="controls__goToNext">Next →</button>
+        </div>
       </section>
 
       <!--  -->
@@ -202,5 +211,7 @@
       </footer>
 
     </div>
+
+    <script src="dist/minified/all.js?cb=1582830097561"></script>
   </body>
 </html>

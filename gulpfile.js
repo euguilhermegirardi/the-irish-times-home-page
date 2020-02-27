@@ -5,9 +5,9 @@ concat = require('gulp-concat');
 postcss = require('gulp-postcss');
 replace = require('gulp-replace');
 sass = require('gulp-sass');
-sourcemaps = require('gulp-sourcemaps'),
-uglify = require('gulp-uglify'),
-imagemin = require('gulp-imagemin'),
+sourcemaps = require('gulp-sourcemaps');
+uglify = require('gulp-uglify-es').default;
+imagemin = require('gulp-imagemin');
 browserSync = require('browser-sync').create();
 
 // File path variables

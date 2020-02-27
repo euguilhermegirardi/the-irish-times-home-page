@@ -7,13 +7,13 @@
 
   .menu__info {
     display: flex;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #4b4d54;
     text-transform: uppercase;
 
     .menu__items {
-      //padding: 1rem;
-      //margin: 0 1.8rem;
+      padding: 10px;
+      margin: 0 1rem;
       border-left: 1px solid #ccc;
       border-right: 1px solid #ccc;
     }
@@ -54,7 +54,7 @@
     text-transform: uppercase;
 
     .menu__items-small {
-      //margin: 0 2rem;
+      margin: 0 8px;
     }
   }
 }
