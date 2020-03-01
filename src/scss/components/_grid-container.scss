@@ -6,4 +6,6 @@
       minmax(min-content, 12rem)
     )
     [center-end] minmax(25rem, 1fr) [full-end];
+
+  grid-row-gap: 1rem;
 }
