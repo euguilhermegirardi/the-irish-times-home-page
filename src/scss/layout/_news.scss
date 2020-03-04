@@ -141,6 +141,12 @@
       align-items: center;
       font-size: 1.8rem;
 
+      &:hover {
+        color: #074399;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
       img {
         border-radius: 3px;
       }
@@ -202,10 +208,6 @@
 
         &:last-child:before {
           content: "4";
-        }
-
-        &:after {
-          pointer-events: none;
         }
       }
     }
