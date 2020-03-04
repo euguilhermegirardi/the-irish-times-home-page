@@ -2,7 +2,7 @@
   grid-column: center-start/center-end;
   display: grid;
   grid-template-columns: repeat(8, minmax(min-content, 12rem));
-  // grid-template-rows: 15vw repeat(4, 5vw);
+  grid-template-rows: minmax(28rem, 0rem) repeat(3, 15rem);
 
   .news__container {
     grid-column: 1/6;
@@ -158,6 +158,7 @@
 
     .news__advertisement {
       grid-column: 1/5;
+      margin: 1rem 0;
 
       img {
         width: 100%;
@@ -169,16 +170,42 @@
       grid-column: 1/5;
 
       p {
+        display: flex;
         font-size: 1.5rem;
+        padding: 1rem;
         color: #515151;
         border-bottom: 1px solid #515151;
 
+        &:hover {
+          color: #074399;
+          text-decoration: none;
+          cursor: pointer;
+        }
+
         &:before {
+          font-size: 3.5rem;
+          font-weight: bold;
+          margin-right: 1.5rem;
+        }
+
+        &:first-child:before {
           content: "1";
         }
 
-        &:before:nth-child(2) {
+        &:nth-child(2):before {
           content: "2";
+        }
+
+        &:nth-child(3):before {
+          content: "3";
+        }
+
+        &:last-child:before {
+          content: "4";
+        }
+
+        &:after {
+          pointer-events: none;
         }
       }
     }
