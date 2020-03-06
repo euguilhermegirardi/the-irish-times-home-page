@@ -1,6 +1,6 @@
 .navbar {
   grid-column: full-start/full-end;
-  height: 6vh;
+  // height: 6vh;
   display: grid;
   grid-template-columns:
     minmax(25rem, 1fr) repeat(8, minmax(min-content, 12rem))
