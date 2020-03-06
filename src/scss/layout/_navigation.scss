@@ -1,10 +1,10 @@
 .navbar {
   grid-column: full-start/full-end;
-  // height: 6vh;
+  height: 4rem;
   display: grid;
   grid-template-columns:
-    minmax(25rem, 1fr) repeat(8, minmax(min-content, 12rem))
-    minmax(25rem, 1fr);
+    minmax(min-content, 1fr) repeat(8, minmax(min-content, 12rem))
+    minmax(min-content, 1fr);
   background-color: #333;
 }
 

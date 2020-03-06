@@ -13,9 +13,10 @@
 
   .header__title {
     color: black;
+    height: 60px;
     font-size: 6rem;
     text-transform: uppercase;
-    align-self: center;
+    align-self: end;
   }
 
   .header__weather {

@@ -1,12 +1,12 @@
 .grid-container {
   display: grid;
   grid-template-columns:
-    [full-start] minmax(25rem, 1fr) [center-start] repeat(
+    [full-start] minmax(min-content, 1fr) [center-start] repeat(
       8,
       minmax(min-content, 12rem)
     )
-    [center-end] minmax(25rem, 1fr) [full-end];
+    [center-end] minmax(min-content, 1fr) [full-end];
 
   grid-row-gap: 1rem;
-  grid-template-rows: 6rem 8rem 12rem 18rem 5rem auto 10rem;
+  grid-template-rows: 10rem 12rem 18rem 5rem auto;
 }
