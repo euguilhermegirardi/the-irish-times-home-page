@@ -1,10 +1,25 @@
+// function showsOne(item) {
+//   $('.showAndHide').each(function (index) {
+//     if ($(this).attr("id") == item) {
+//       $(this).show();
+//     }
+//     else {
+//       $(this).hide();
+//     }
+//   });
+// }
+
+const showAndHide = document.getElementsByClassName('showAndHide');
+
 function showsOne(item) {
-  $('.showAndHide').each(function (index) {
-    if ($(this).attr("id") == item) {
-      $(this).show();
+  Array.from(showAndHide).forEach((showAndHide) => {
+
+    if (showAndHide.id == item) {
+      showAndHide.style.display = "block";
     }
     else {
-      $(this).hide();
+      showAndHide.style.display = "none";
     }
-  });
+  })
 }
+
