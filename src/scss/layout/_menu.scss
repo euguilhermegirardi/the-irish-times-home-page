@@ -1,9 +1,11 @@
 .menu {
   grid-column: center-start/center-end;
-  // height: 12vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+
+  .menu__info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 
   .menu__info {
     display: flex;
@@ -12,6 +14,7 @@
     text-transform: uppercase;
 
     .menu__items {
+      background-color: #f6f6f6;
       padding: 10px;
       margin: 0 1rem;
       border-left: 1px solid #ccc;
@@ -47,14 +50,52 @@
     border-top: 2.5px solid darkblue;
   }
 
-  .menu__info-more {
+  .menu__info--more {
     display: flex;
     color: #4b4d54;
     font-size: 1.5rem;
     text-transform: uppercase;
 
-    .menu__items-small {
+    .menu__items--small {
       margin: 0 8px;
+    }
+  }
+
+  .menu__info-items--news {
+    ul {
+      display: flex;
+      font-size: 1.5rem;
+      justify-content: space-between;
+      background-color: #f6f6f6;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      border-bottom: 2px solid red;
+      color: #4b4d54;
+      border-top: 1px solid #ccc;
+
+      li {
+        cursor: pointer;
+        padding: 1rem;
+      }
+    }
+  }
+
+  .menu__info-items--sport {
+    ul {
+      display: flex;
+      font-size: 1.5rem;
+      justify-content: space-between;
+      background-color: #f6f6f6;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      border-bottom: 2px solid green;
+      color: #4b4d54;
+      border-top: 1px solid #ccc;
+
+      li {
+        cursor: pointer;
+        padding: 1rem;
+      }
     }
   }
 }
