@@ -12,13 +12,13 @@
     font-size: 1.5rem;
     color: #4b4d54;
     text-transform: uppercase;
+    position: relative;
+    top: 1px;
 
     .menu__items {
-      background-color: #f6f6f6;
       padding: 10px;
       margin: 0 1rem;
-      border-left: 1px solid #ccc;
-      border-right: 1px solid #ccc;
+      cursor: pointer;
     }
   }
 
@@ -128,6 +128,10 @@
   }
 
   .active-item {
-    color: pink;
+    position: relative;
+    z-index: 1;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background-color: #f6f6f6;
   }
 }
