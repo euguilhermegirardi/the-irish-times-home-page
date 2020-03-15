@@ -61,7 +61,13 @@
     }
   }
 
-  .menu__info-items--news {
+  .menu__info-items--news,
+  .menu__info-items--sport,
+  .menu__info-items--business,
+  .menu__info-items--opinion,
+  .menu__info-items--lifeAndStyle,
+  .menu__info-items--culture,
+  .menu__info-items--more {
     ul {
       display: flex;
       font-size: 1.5rem;
@@ -69,7 +75,6 @@
       background-color: #f6f6f6;
       border-left: 1px solid #ccc;
       border-right: 1px solid #ccc;
-      border-bottom: 2px solid red;
       color: #4b4d54;
       border-top: 1px solid #ccc;
 
@@ -80,22 +85,49 @@
     }
   }
 
+  .menu__info-items--news {
+    ul {
+      border-bottom: 2px solid red;
+    }
+  }
+
   .menu__info-items--sport {
     ul {
-      display: flex;
-      font-size: 1.5rem;
-      justify-content: space-between;
-      background-color: #f6f6f6;
-      border-left: 1px solid #ccc;
-      border-right: 1px solid #ccc;
       border-bottom: 2px solid green;
-      color: #4b4d54;
-      border-top: 1px solid #ccc;
-
-      li {
-        cursor: pointer;
-        padding: 1rem;
-      }
     }
+  }
+
+  .menu__info-items--business {
+    ul {
+      border-bottom: 2px solid blue;
+    }
+  }
+
+  .menu__info-items--opinion {
+    ul {
+      border-bottom: 2px solid brown;
+    }
+  }
+
+  .menu__info-items--lifeAndStyle {
+    ul {
+      border-bottom: 2px solid yellow;
+    }
+  }
+
+  .menu__info-items--culture {
+    ul {
+      border-bottom: 2px solid purple;
+    }
+  }
+
+  .menu__info-items--more {
+    ul {
+      border-bottom: 2px solid darkblue;
+    }
+  }
+
+  .active-item {
+    color: pink;
   }
 }
