@@ -23,3 +23,14 @@ body {
 * > a {
   text-decoration: none;
 }
+
+*:focus {
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}

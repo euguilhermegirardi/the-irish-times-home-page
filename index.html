@@ -28,7 +28,11 @@
 
       <!-- SEARCH DROPDOWN -->
       <div id="myDropdown" class="navbar__searchDropdown">
-        <input type="text" placeholder="Search.." id="navbar__myInput" onkeyup="dropdown()">
+        <div class="navbar__search-pushdown show">
+          <div class="navbar__search-container">
+            <input type="text" placeholder="Search" autocorrect="off" autocapitalize="off" id="navbar__myInput" onkeyup="dropdown()">
+          </div>
+        </div>
       </div>
       <!-- SEARCH DROPDOWN ENDS -->
     </nav>
