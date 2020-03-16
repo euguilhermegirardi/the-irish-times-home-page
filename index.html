@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="dist/minified/main.css?cb=1584303947997">
+    <link rel="stylesheet" href="dist/minified/main.css?cb=1584383356364">
     <title>The Irish Times</title>
   </head>
   <body>
@@ -13,7 +13,7 @@
     <nav class="navbar">
       <div class="navbar__left">
         <ul class="navbar__links">
-          <li class="navbar__item">Search</li>
+          <li class="navbar__item" onClick="searchDropdown()">Search</li>
           <li class="navbar__item">Newsletters</li>
           <li class="navbar__item">Crosswords</li>
           <li class="navbar__item">Notices</li>
@@ -25,6 +25,12 @@
           <li class="navbar__item">Sign In</li>
         </ul>
       </div>
+
+      <!-- SEARCH DROPDOWN -->
+      <div id="myDropdown" class="navbar__searchDropdown">
+        <input type="text" placeholder="Search.." id="navbar__myInput" onkeyup="dropdown()">
+      </div>
+      <!-- SEARCH DROPDOWN ENDS -->
     </nav>
     <div class="grid-container container">
 
@@ -310,6 +316,6 @@
       </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="dist/minified/all.js?cb=1584303947997"></script>
+    <script src="dist/minified/all.js?cb=1584383356364"></script>
   </body>
 </html>

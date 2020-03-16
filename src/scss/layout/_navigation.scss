@@ -27,6 +27,7 @@
 .navbar__links {
   display: flex;
   justify-content: inherit;
+  position: relative;
   height: 100%;
   width: 100%;
   align-items: center;
@@ -49,4 +50,30 @@
     text-transform: uppercase;
     color: white;
   }
+}
+
+.navbar__searchDropdown {
+  display: none;
+  position: absolute;
+  top: 4rem;
+  background-color: #f6f6f6;
+  min-width: 100%;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+#navbar__myInput {
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+}
+
+#navbar__myInput:focus {
+  outline: 3px solid #ddd;
+}
+
+.show {
+  display: block;
 }
