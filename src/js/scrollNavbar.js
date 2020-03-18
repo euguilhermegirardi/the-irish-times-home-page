@@ -1,8 +1,7 @@
-// When the user scrolls down 20px from the top of the document, slide down the navbar
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 280 || document.documentElement.scrollTop > 280) {
     document.getElementById("scrollNavbar").style.top = "0";
   } else {
     document.getElementById("scrollNavbar").style.top = "-50px";
