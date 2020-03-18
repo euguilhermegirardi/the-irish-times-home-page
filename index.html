@@ -36,8 +36,8 @@
       </div>
       <!-- SEARCH DROPDOWN ENDS -->
     </nav>
-    <div class="grid-container container">
 
+    <div class="grid-container container">
       <!-- HEADER -->
       <header class="header">
         <div class="header__date"><span>Tue, Feb 20, 2020</span></div>
@@ -86,9 +86,23 @@
             <li>Work</li>
             <li>Commercial Property</li>
             <li>Comment</li>
-            <li>All Business  \/</li>
+            <li onClick="allDropdown()">All Business  \/</li>
           </ul>
         </div>
+
+        <!-- ALL BUSINESS DROPDOWN -->
+        <div id="allDropdown" class="menu__info-items--all-business">
+          <div class="menu__info-items--pushdown show2">
+            <ul>
+              <li>test</li>
+              <li>testtttt</li>
+              <li>testttttttt</li>
+              <li>tes</li>
+              <li>tesss</li>
+            </ul>
+          </div>
+        </div>
+        <!-- ALL BUSINESS DROPDOWN ENDS -->
 
         <div class="menu__info-items--sport none showAndHide" id="link-2">
           <ul>
@@ -319,7 +333,6 @@
         </div>
       </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="dist/minified/all.js?cb=1584383356364"></script>
   </body>
 </html>

@@ -22,6 +22,36 @@
     }
   }
 
+  // ALL DROPDDOWN
+  .menu__info-items--all-business {
+    height: 0;
+    transition: height, 0.5s linear;
+    position: relative;
+    overflow: hidden;
+    z-index: 20;
+    box-shadow: inset 1px -6px 9px -6px #999;
+    background-color: #fff;
+  }
+
+  .menu__info-items--pushdown {
+    max-width: 960px;
+    border: 1px solid #bcbcbc;
+    border-bottom: 2px solid;
+    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .show2 {
+    height: 250px;
+    -webkit-transition: height, 0.5s linear;
+    -moz-transition: height, 0.5s linear;
+    -ms-transition: height, 0.5s linear;
+    -o-transition: height, 0.5s linear;
+    transition: height, 0.5s linear;
+  }
+  // ALL DROPDDOWN ENDS
+
   .menu__items:nth-child(1) {
     border-top: 2.5px solid red;
   }
@@ -88,42 +118,67 @@
   .menu__info-items--news {
     ul {
       border-bottom: 2px solid red;
+
+      li:hover {
+        color: red;
+      }
     }
   }
 
   .menu__info-items--sport {
     ul {
       border-bottom: 2px solid green;
+
+      li:hover {
+        color: green;
+      }
     }
   }
 
   .menu__info-items--business {
     ul {
       border-bottom: 2px solid blue;
+
+      li:hover {
+        color: blue;
+      }
     }
   }
 
   .menu__info-items--opinion {
     ul {
       border-bottom: 2px solid brown;
+      li:hover {
+        color: brown;
+      }
     }
   }
 
   .menu__info-items--lifeAndStyle {
     ul {
       border-bottom: 2px solid orange;
+
+      li:hover {
+        color: orange;
+      }
     }
   }
 
   .menu__info-items--culture {
     ul {
       border-bottom: 2px solid purple;
+      li:hover {
+        color: purple;
+      }
     }
   }
 
   .menu__info-items--more {
     ul {
       border-bottom: 2px solid darkblue;
+      li:hover {
+        color: darkblue;
+      }
     }
   }
 
