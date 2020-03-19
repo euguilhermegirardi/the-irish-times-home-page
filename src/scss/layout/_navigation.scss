@@ -10,14 +10,14 @@
 
 .navbar__left {
   grid-column-start: 2;
-  grid-column-end: 6;
+  grid-column-end: 7;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
 .navbar__right {
-  grid-column-start: 6;
+  grid-column-start: 7;
   grid-column-end: 10;
   display: flex;
   justify-content: flex-end;
@@ -46,7 +46,7 @@
 
   .navbar__item {
     display: flex;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
     font-size: 1.5rem;
     text-transform: uppercase;
     color: white;
@@ -61,6 +61,7 @@
     .navbar__item--svg {
       height: 15px;
       width: 15px;
+      fill: #fff;
     }
 
     p {
