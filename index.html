@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="dist/minified/main.css?cb=1584383356364">
+    <link rel="stylesheet" href="dist/minified/main.css?cb=1584618700618">
     <title>The Irish Times</title>
   </head>
   <body>
@@ -13,8 +13,18 @@
     <nav class="navbar">
       <div class="navbar__left">
         <ul class="navbar__links">
-          <li class="navbar__item" onClick="searchDropdown()">Search</li>
-          <li class="navbar__item">Newsletters</li>
+          <li class="navbar__item" onClick="searchDropdown()">
+            <svg class="navbar__item--svg">
+              <use xlink:href="dist/minified/assets/sprite.svg#icon-lupa"></use>
+            </svg>
+            <p>Search</p>
+          </li>
+          <li class="navbar__item">
+            <svg class="navbar__item--svg">
+              <use xlink:href="dist/minified/assets/sprite.svg#icon-open-book"></use>
+            </svg>
+            <p>Newsletters</p>
+          </li>
           <li class="navbar__item">Crosswords</li>
           <li class="navbar__item">Notices</li>
         </ul>
@@ -38,11 +48,11 @@
     </nav>
 
     <!-- SCROLL NAVBAR -->
-    <div id="scrollNavbar">
+    <nav id="scrollNavbar">
       <a href="#">Home</a>
       <a href="#">News</a>
       <a href="#">Contact</a>
-    </div>
+    </nav>
     <!-- SCROLL NAVBAR ENDS -->
 
     <div class="grid-container container">
@@ -341,6 +351,6 @@
         </div>
       </footer>
 
-    <script src="dist/minified/all.js?cb=1584383356364"></script>
+    <script src="dist/minified/all.js?cb=1584618700618"></script>
   </body>
 </html>
