@@ -274,9 +274,11 @@
 }
 
 .active {
-  color: #c00;
-}
+  p {
+    color: #c00;
+  }
 
-.active2 {
-  fill: #c00;
+  .menu__info-svg {
+    fill: #c00;
+  }
 }
