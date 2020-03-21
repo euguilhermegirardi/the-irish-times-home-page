@@ -5,7 +5,7 @@ function showsOne() {
   menuItems.forEach(e => {
 
     e.addEventListener('click', () => {
-      // before we set the new class we have to "clear" all others
+      // before set the new class I have to "clear" all others
       subMenus.forEach(subMenu => {
         subMenu.style.display = 'none';
       });
