@@ -1,25 +1,20 @@
-// function showsOne(item) {
-//   $('.showAndHide').each(function (index) {
-//     if ($(this).attr("id") == item) {
-//       $(this).show();
-//     }
-//     else {
-//       $(this).hide();
-//     }
-//   });
-// }
+const menuItems = document.querySelectorAll('.menu__items');
+const subMenus = document.querySelectorAll('.menu__info-items');
 
-const showAndHide = document.getElementsByClassName('showAndHide');
+function showsOne() {
+  menuItems.forEach(e => {
 
-function showsOne(item) {
-  Array.from(showAndHide).forEach((showAndHide) => {
+    e.addEventListener('click', () => {
+      // before we set the new class we have to "clear" all others
+      subMenus.forEach(subMenu => {
+        subMenu.style.display = 'none';
+      });
 
-    if (showAndHide.id == item) {
-      showAndHide.style.display = "block";
-    }
-    else {
-      showAndHide.style.display = "none";
-    }
+      let item = document.getElementById(e.dataset.targetId)
+      item.style.display = 'block';
+    })
   })
 }
+showsOne();
+
 

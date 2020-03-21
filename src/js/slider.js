@@ -17,7 +17,6 @@ function Slider(slider) {
     current = slider.querySelector('.current') || slides.firstElementChild;
     prev = current.previousElementSibling || slides.lastElementChild;
     next = current.nextElementSibling || slides.firstElementChild;
-    console.log({ current, prev, next });
   }
 
   function applyClasses() {

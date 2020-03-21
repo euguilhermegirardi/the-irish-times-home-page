@@ -13,7 +13,7 @@
     <nav class="navbar">
       <div class="navbar__left">
         <ul class="navbar__links">
-          <li class="navbar__item" onClick="searchDropdown()">
+          <li class="navbar__item">
             <svg class="navbar__item--svg">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487.95 487.95"><path d="M481.8 453l-140-140.1c27.6-33.1 44.2-75.4 44.2-121.6C386 85.9 299.5.2 193.1.2S0 86 0 191.4s86.5 191.1 192.9 191.1c45.2 0 86.8-15.5 119.8-41.4l140.5 140.5c8.2 8.2 20.4 8.2 28.6 0 8.2-8.2 8.2-20.4 0-28.6zM41 191.4c0-82.8 68.2-150.1 151.9-150.1s151.9 67.3 151.9 150.1-68.2 150.1-151.9 150.1S41 274.1 41 191.4z"/></svg>
             </svg>
@@ -103,13 +103,13 @@
       <div class="menu">
         <div class="menu__info-container">
           <ul class="menu__info" id="list-items">
-            <li class="menu__items active-item" onClick="showsOne('link-1')">News</li>
-            <li class="menu__items" onClick="showsOne('link-2')">Sport</li>
-            <li class="menu__items" onClick="showsOne('link-3')">Business</li>
-            <li class="menu__items" onClick="showsOne('link-4')">Opinion</li>
-            <li class="menu__items" onClick="showsOne('link-5')">Life & Style</li>
-            <li class="menu__items" onClick="showsOne('link-6')">Culture</li>
-            <li class="menu__items" onClick="showsOne('link-7')">More</li>
+            <li class="menu__items active-item" data-target-id="link-1">News</li>
+            <li class="menu__items" data-target-id="link-2">Sport</li>
+            <li class="menu__items" data-target-id="link-3">Business</li>
+            <li class="menu__items" data-target-id="link-4">Opinion</li>
+            <li class="menu__items" data-target-id="link-5">Life & Style</li>
+            <li class="menu__items" data-target-id="link-6">Culture</li>
+            <li class="menu__items" data-target-id="link-7">More</li>
           </ul>
           <ul class="menu__info--more">
             <li class="menu__items--small">
@@ -127,7 +127,7 @@
           </ul>
         </div>
 
-        <div class="menu__info-items--news showAndHide" id="link-1">
+        <div class="menu__info-items menu__info-items--news" id="link-1">
           <ul>
             <li>Budget 2020</li>
             <li>The Economy</li>
@@ -327,7 +327,7 @@
         </div>
         <!-- ALL BUSINESS DROPDOWN ENDS -->
 
-        <div class="menu__info-items--sport none showAndHide" id="link-2">
+        <div class="menu__info-items menu__info-items--sport none" id="link-2">
           <ul>
             <li>Six Nations</li>
             <li>Gaelic Games</li>
@@ -341,7 +341,7 @@
           </ul>
         </div>
 
-        <div class="menu__info-items--business none showAndHide" id="link-3">
+        <div class="menu__info-items menu__info-items--business none" id="link-3">
           <ul>
             <li>Budget 2020</li>
             <li>The Economy</li>
@@ -355,7 +355,7 @@
           </ul>
         </div>
 
-        <div class="menu__info-items--opinion none showAndHide" id="link-4">
+        <div class="menu__info-items menu__info-items--opinion none" id="link-4">
           <ul>
             <li>Editorials</li>
             <li>Letters</li>
@@ -367,7 +367,7 @@
           </ul>
         </div>
 
-        <div class="menu__info-items--lifeAndStyle none showAndHide" id="link-5">
+        <div class="menu__info-items menu__info-items--lifeAndStyle none" id="link-5">
           <ul>
             <li>Food & Drink</li>
             <li>Homes & Property</li>
@@ -381,7 +381,7 @@
           </ul>
         </div>
 
-        <div class="menu__info-items--culture none showAndHide" id="link-6">
+        <div class="menu__info-items menu__info-items--culture none" id="link-6">
           <ul>
             <li>Books</li>
             <li>Film</li>
@@ -395,7 +395,7 @@
           </ul>
         </div>
 
-        <div class="menu__info-items--more none showAndHide" id="link-7">
+        <div class="menu__info-items menu__info-items--more none" id="link-7">
           <ul>
             <li>You are what you read</li>
             <li>eBooks</li>

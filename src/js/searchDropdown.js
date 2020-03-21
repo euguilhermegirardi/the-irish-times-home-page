@@ -1,11 +1,16 @@
 // OPEN AND CLOSE SEARCH
+const search = document.querySelector('.navbar__item');
+
 function searchDropdown() {
-  document.getElementById("myDropdown").classList.toggle("show");
+  search.addEventListener('click', () => {
+    document.querySelector("#myDropdown").classList.toggle("show");
+  })
 }
+searchDropdown();
 // OPEN AND CLOSE SEARCH ENDS!
 
 
-// Close search bar clicking outside.
+// CLOSE SEARCH BY CLICKING OUTSIDE
 const modalOuter = document.querySelector('.navbar__searchDropdown');
 
 function closeSearch() {
@@ -25,4 +30,4 @@ window.addEventListener('keydown', event => {
   }
 });
 
-// Close search bar clicking outside. ENDS!
+// CLOSE SEARCH BY CLICKING OUTSIDE ENDS
