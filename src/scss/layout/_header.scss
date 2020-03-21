@@ -1,10 +1,9 @@
 .header {
   grid-column: center-start/center-end;
-  // height: 15vh;
-  margin: 1.5rem 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin: 1.5rem 0;
 
   .header__date {
     color: #666;
@@ -12,7 +11,7 @@
   }
 
   .header__title {
-    color: black;
+    color: #000;
     height: 60px;
     font-size: 6rem;
     text-transform: uppercase;

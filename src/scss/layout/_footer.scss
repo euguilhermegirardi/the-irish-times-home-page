@@ -1,10 +1,10 @@
 footer {
   grid-column: full-start/full-end;
-  height: 10rem;
-  background-color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 10rem;
+  background-color: #333;
 
   p {
     text-transform: uppercase;
@@ -15,12 +15,17 @@ footer {
 
   div {
     a {
+      padding: 3px;
       font-size: 13px;
       color: #ccc;
-    }
-  }
 
-  .footer__top {
-    margin-bottom: 5px;
+      &:hover {
+        color: #000;
+      }
+    }
+
+    .footer__top {
+      margin-bottom: 5px;
+    }
   }
 }
