@@ -49,6 +49,14 @@
       }
     }
 
+    .active-item {
+      position: relative;
+      z-index: 1;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      background-color: #f6f6f6;
+    }
+
     .menu__info-more {
       display: flex;
       color: #4b4d54;
@@ -74,7 +82,7 @@
       border-top: 1px solid #ccc;
     }
 
-    .menu__list {
+    .menu__item {
       cursor: pointer;
       padding: 1rem;
     }
@@ -86,33 +94,33 @@
     .menu__item--news:hover {
       color: #c00;
     }
+  }
 
-    #menu__info-all {
-      display: flex;
+  .menu__item--info-all {
+    display: flex;
 
-      &:hover {
-        p {
-          color: #c00;
-        }
-
-        .menu__info-svg {
-          fill: #c00;
-        }
+    &:hover {
+      p {
+        color: #c00;
       }
 
-      .menu__info-svg {
-        display: block;
-        margin-left: 2px;
-        margin-top: 1px;
-        height: 15px;
-        width: 15px;
-        transform: rotate(0);
-        transition: transform 0.25s ease-in-out;
+      .menu__item-svg {
+        fill: #c00;
       }
+    }
 
-      .menu__info-svg--open {
-        transform: rotate(180deg);
-      }
+    .menu__item-svg {
+      display: block;
+      margin-left: 2px;
+      margin-top: 1px;
+      height: 15px;
+      width: 15px;
+      transform: rotate(0);
+      transition: transform 0.25s ease-in-out;
+    }
+
+    .menu__item-svg-open {
+      transform: rotate(180deg);
     }
   }
 
@@ -163,14 +171,6 @@
       color: darkblue;
     }
   }
-
-  .active-item {
-    position: relative;
-    z-index: 1;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    background-color: #f6f6f6;
-  }
 }
 
 .active {
@@ -178,7 +178,7 @@
     color: #c00;
   }
 
-  .menu__info-svg {
+  .menu__item-svg {
     fill: #c00;
   }
 }
