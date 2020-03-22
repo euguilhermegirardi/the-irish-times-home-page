@@ -6,22 +6,22 @@
     minmax(min-content, 1fr) repeat(8, minmax(min-content, 12rem))
     minmax(min-content, 1fr);
   background-color: #333;
+}
 
-  .navbar__left {
-    grid-column-start: 2;
-    grid-column-end: 7;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
+.navbar--left {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 
-  .navbar__right {
-    grid-column-start: 7;
-    grid-column-end: 10;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
+.navbar--right {
+  grid-column-start: 7;
+  grid-column-end: 10;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .navbar__links {
@@ -58,7 +58,7 @@
       border-right: 1px solid #000;
     }
 
-    .navbar__item--svg {
+    .navbar__svg {
       height: 15px;
       width: 15px;
       fill: #fff;

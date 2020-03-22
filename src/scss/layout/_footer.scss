@@ -1,4 +1,4 @@
-footer {
+.footer {
   grid-column: full-start/full-end;
   display: flex;
   justify-content: center;
@@ -13,8 +13,8 @@ footer {
     font-size: 15px;
   }
 
-  div {
-    a {
+  .footer__container {
+    .footer__links {
       padding: 3px;
       font-size: 13px;
       color: #ccc;

@@ -1,4 +1,4 @@
-#scrollNavbar {
+#navbar--scroll {
   background-color: #333;
   position: fixed;
   top: -65px;
@@ -8,7 +8,7 @@
   z-index: 200;
   border-bottom: 3px solid #c00;
 
-  .scroll-menu {
+  .navbar__scroll-menu {
     display: flex;
     margin: 0 auto;
     max-width: 960px;
@@ -33,21 +33,21 @@
       padding-top: 2.1rem;
     }
 
-    .scroll-menu__dropdown {
+    .navbar__scroll-dropdown {
       display: flex;
 
       p {
         padding-left: 5px;
       }
 
-      .scroll-menu--svg {
+      .navbar__scroll-svg {
         width: 15px;
         height: 15px;
         fill: #fff;
       }
     }
 
-    .scroll-menu__active-item {
+    .navbar__scroll-active {
       background-color: #fad165;
       color: #000;
       height: 6rem;
@@ -56,17 +56,17 @@
   }
 }
 
-#scrollNavbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-  font-size: 17px;
-}
+// #navbar__scroll a {
+//   float: left;
+//   display: block;
+//   color: #f2f2f2;
+//   text-align: center;
+//   padding: 15px;
+//   text-decoration: none;
+//   font-size: 17px;
+// }
 
-#scrollNavbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
+// #navbar__scroll a:hover {
+//   background-color: #ddd;
+//   color: black;
+// }
