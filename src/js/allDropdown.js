@@ -1,5 +1,6 @@
-// OPEN AND CLOSE ALL ITEM
-function allDropdown() {
+const allDropdown = document.querySelector('.menu__item--info-all');
+
+allDropdown.addEventListener('click', function allDropdown() {
   document.querySelector("#menu__all-dropdown").classList.toggle("show2");
 
   const svg = document.querySelector('.menu__item-svg');
@@ -7,5 +8,4 @@ function allDropdown() {
 
   const active = document.querySelector('.menu__item--info-all');
   active.classList.toggle('active');
-}
-// OPEN AND CLOSE ALL ITEM ENDS!
+});
