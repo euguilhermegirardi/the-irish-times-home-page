@@ -12,18 +12,18 @@
     .news__container--left {
       grid-column: 1/3;
 
-      h2 {
+      .news__title {
         line-height: 2.7rem;
         font-weight: initial;
         font-size: 2.2rem;
       }
 
-      img {
+      .news__title-img {
         margin: 1rem 0;
         border-radius: 3px;
       }
 
-      small {
+      .news__desc {
         font-size: 1rem;
         font-weight: initial;
       }
@@ -33,17 +33,17 @@
       grid-column: 3/9;
       border-left: 1.5px solid #c6c6c6;
 
-      figure {
+      .news__figure {
         position: relative;
         display: flex;
         justify-content: center;
 
-        img {
+        .news__figure-img {
           max-width: 350px;
           border-radius: 2px;
         }
 
-        figcaption {
+        .news__figcaption {
           position: absolute;
           bottom: 0px;
           left: 11px;
@@ -78,27 +78,27 @@
     .news__boxes {
       max-width: 50%;
 
-      h3 {
+      .news__boxes-titles {
         color: #000;
         font-size: 1.4rem;
       }
 
-      .news__small-container--video {
+      .news__video {
         display: flex;
         margin-top: 1rem;
 
-        img {
+        .news__img {
           max-width: 140px;
           border-radius: 3px;
         }
 
-        .news__small-container--video-info {
+        .news__video-info {
           max-width: 50%;
           text-align: inherit;
           margin-left: 10px;
           font-weight: bold;
 
-          p {
+          .news__video-title {
             color: #c00;
 
             span {
@@ -106,7 +106,7 @@
             }
           }
 
-          small {
+          .news__video-txt {
             font-size: 10px;
             color: #515151;
           }
@@ -126,7 +126,7 @@
       );
     grid-row-gap: 10px;
 
-    h3 {
+    .news__latest-title {
       grid-column: 1/5;
       border-bottom: 1px solid black;
       height: 2rem;
@@ -147,11 +147,11 @@
         cursor: pointer;
       }
 
-      img {
+      .news__img {
         border-radius: 3px;
       }
 
-      p {
+      .news__txt {
         text-align: initial;
         width: 60%;
       }
@@ -166,7 +166,7 @@
       grid-column: 1/5;
       margin: 1rem 0;
 
-      img {
+      .news__adv-img {
         width: 100%;
         height: 100%;
       }
@@ -175,7 +175,7 @@
     .news__articles {
       grid-column: 1/5;
 
-      p {
+      .news__art-txt {
         display: flex;
         font-size: 1.5rem;
         padding: 1rem;
