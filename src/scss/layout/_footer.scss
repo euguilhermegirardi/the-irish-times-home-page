@@ -22,6 +22,12 @@
       &:hover {
         color: #000;
       }
+
+      &:after {
+        content: "|";
+        position: relative;
+        color: #ccc;
+      }
     }
 
     .footer__top {
