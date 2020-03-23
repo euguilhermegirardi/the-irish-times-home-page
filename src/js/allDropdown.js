@@ -1,6 +1,6 @@
 // OPEN AND CLOSE ALL ITEM
 function allDropdown() {
-  document.querySelector("#allDropdown").classList.toggle("show2");
+  document.querySelector("#menu__all-dropdown").classList.toggle("show2");
 
   const svg = document.querySelector('.menu__item-svg');
   svg.classList.toggle('menu__item-svg-open');
