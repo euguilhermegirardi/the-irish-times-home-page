@@ -1,19 +1,19 @@
 #navbar--scroll {
-  background-color: #333;
+  background-color: $color-matte-black;
   position: fixed;
   top: -65px;
   width: 100%;
   display: block;
   transition: top 0.3s;
   z-index: 200;
-  border-bottom: 3px solid #c00;
+  border-bottom: 3px solid $color-red;
 
   .navbar__scroll-menu {
     display: flex;
     margin: 0 auto;
     max-width: 960px;
     text-transform: uppercase;
-    color: #fff;
+    color: $color-white;
 
     li {
       padding: 1rem;
@@ -28,7 +28,7 @@
     }
 
     li:nth-child(2) {
-      background-color: #c00;
+      background-color: $color-red;
       height: 6rem;
       padding-top: 2.1rem;
     }
@@ -43,30 +43,15 @@
       .navbar__scroll-svg {
         width: 15px;
         height: 15px;
-        fill: #fff;
+        fill: $color-white;
       }
     }
 
     .navbar__scroll-active {
-      background-color: #fad165;
-      color: #000;
+      background-color: $color-mustard-yellow;
+      color: $color-black;
       height: 6rem;
       padding-top: 2.1rem;
     }
   }
 }
-
-// #navbar__scroll a {
-//   float: left;
-//   display: block;
-//   color: #f2f2f2;
-//   text-align: center;
-//   padding: 15px;
-//   text-decoration: none;
-//   font-size: 17px;
-// }
-
-// #navbar__scroll a:hover {
-//   background-color: #ddd;
-//   color: black;
-// }

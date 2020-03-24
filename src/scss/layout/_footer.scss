@@ -4,11 +4,11 @@
   justify-content: center;
   align-items: center;
   height: 10rem;
-  background-color: #333;
+  background-color: $color-matte-black;
 
   .footer__title {
     text-transform: uppercase;
-    color: #ccc;
+    color: $color-light-gray;
     margin-right: 3rem;
     font-size: 15px;
   }
@@ -17,16 +17,16 @@
     .footer__links {
       padding: 3px;
       font-size: 13px;
-      color: #ccc;
+      color: $color-light-gray;
 
       &:hover {
-        color: #000;
+        color: $color-black;
       }
 
       &:after {
         content: "|";
         position: relative;
-        color: #ccc;
+        color: $color-light-gray;
       }
     }
 

@@ -17,8 +17,8 @@ function closeSearch() {
   modalOuter.classList.remove('show');
 }
 
-modalOuter.addEventListener('click', function(e) {
-  const isOutside = !e.target.closest('.navbar__pushdown');
+modalOuter.addEventListener('click', function(element) {
+  const isOutside = !element.target.closest('.navbar__pushdown');
   if(isOutside) {
     closeSearch();
   }

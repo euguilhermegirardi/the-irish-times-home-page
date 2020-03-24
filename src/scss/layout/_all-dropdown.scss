@@ -4,15 +4,15 @@
   position: relative;
   overflow: hidden;
   z-index: 20;
-  box-shadow: inset 1px -6px 9px -6px #999;
-  background-color: #fff;
+  box-shadow: inset 1px -6px 9px -6px $color-box-shadow;
+  background-color: $color-white;
 }
 
 .menu__all-pushdown {
   max-width: 960px;
-  border: 1px solid #bcbcbc;
-  border-bottom: 2px solid #c00;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  border: 1px solid $color-light-gray;
+  border-bottom: 2px solid $color-red;
+  font-family: $font-primary;
   font-size: 16px;
   padding: 20px;
 
@@ -42,16 +42,16 @@
 }
 
 .menu__li-dropdown {
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: $font-primary;
   margin: 12px 0;
-  color: #666;
+  color: $color-matte-gray;
 
   .menu__links-dropdown {
     font-size: 15px;
     color: inherit;
 
     &:hover {
-      border-bottom: 1px solid #666;
+      border-bottom: 1px solid $color-matte-gray;
     }
   }
 }
@@ -60,13 +60,13 @@
   text-transform: uppercase;
   display: inline-block;
   color: inherit;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $font-primary;
   font-weight: 400;
   font-size: 15px;
   text-decoration: none;
 
   &:hover {
-    color: #000;
+    color: $color-black;
   }
 }
 

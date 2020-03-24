@@ -31,7 +31,7 @@
 
     .news__container--right {
       grid-column: 3/9;
-      border-left: 1.5px solid #c6c6c6;
+      border-left: 1.5px solid $color-light-gray;
 
       .news__figure {
         position: relative;
@@ -47,7 +47,7 @@
           position: absolute;
           bottom: 0px;
           left: 11px;
-          color: white;
+          color: $color-white;
           font-size: 1.5rem;
           width: 94%;
           line-height: 2.5rem;
@@ -79,7 +79,7 @@
       max-width: 50%;
 
       .news__boxes-titles {
-        color: #000;
+        color: $color-black;
         font-size: 1.4rem;
       }
 
@@ -99,16 +99,16 @@
           font-weight: bold;
 
           .news__video-title {
-            color: #c00;
+            color: $color-red;
 
             span {
-              color: #000;
+              color: $color-black;
             }
           }
 
           .news__video-txt {
             font-size: 10px;
-            color: #515151;
+            color: $color-matte-gray;
           }
         }
       }
@@ -128,7 +128,7 @@
 
     .news__latest-title {
       grid-column: 1/5;
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid $color-black;
       height: 2rem;
       text-transform: uppercase;
       font-size: 1.5rem;
@@ -142,7 +142,7 @@
       font-size: 1.8rem;
 
       &:hover {
-        color: #074399;
+        color: $color-dark-blue;
         text-decoration: none;
         cursor: pointer;
       }
@@ -159,7 +159,7 @@
 
     .news__videos:nth-child(2) {
       padding-bottom: 9px;
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid $color-black;
     }
 
     .news__advertisement {
@@ -179,11 +179,11 @@
         display: flex;
         font-size: 1.5rem;
         padding: 1rem;
-        color: #515151;
-        border-bottom: 1px solid #515151;
+        color: $color-matte-gray;
+        border-bottom: 1px solid $color-matte-gray;
 
         &:hover {
-          color: #074399;
+          color: $color-dark-blue;
           text-decoration: none;
           cursor: pointer;
         }

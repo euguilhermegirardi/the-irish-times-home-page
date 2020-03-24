@@ -5,7 +5,7 @@
   grid-template-columns:
     minmax(min-content, 1fr) repeat(8, minmax(min-content, 12rem))
     minmax(min-content, 1fr);
-  background-color: #333;
+  background-color: $color-matte-black;
 }
 
 .navbar--left {
@@ -38,7 +38,7 @@
     font-size: 1.5rem;
     text-transform: uppercase;
     color: black;
-    background-color: #fad165;
+    background-color: $color-mustard-yellow;
     height: 100%;
     display: flex;
     align-items: center;
@@ -51,17 +51,17 @@
     text-transform: uppercase;
     color: white;
     height: 100%;
-    border-left: 1px solid #000;
+    border-left: 1px solid $color-black;
     align-items: inherit;
 
     &:last-child {
-      border-right: 1px solid #000;
+      border-right: 1px solid $color-black;
     }
 
     .navbar__svg {
       height: 15px;
       width: 15px;
-      fill: #fff;
+      fill: $color-white;
     }
 
     p {

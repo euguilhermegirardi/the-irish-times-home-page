@@ -9,7 +9,7 @@
     .menu__info {
       display: flex;
       font-size: 1.5rem;
-      color: #4b4d54;
+      color: $color-matte-black;
       text-transform: uppercase;
       position: relative;
       top: 1px;
@@ -21,45 +21,45 @@
       }
 
       .menu__items:nth-child(1) {
-        border-top: 2.5px solid red;
+        border-top: 2.5px solid $color-red;
       }
 
       .menu__items:nth-child(2) {
-        border-top: 2.5px solid green;
+        border-top: 2.5px solid $color-green;
       }
 
       .menu__items:nth-child(3) {
-        border-top: 2.5px solid blue;
+        border-top: 2.5px solid $color-blue;
       }
 
       .menu__items:nth-child(4) {
-        border-top: 2.5px solid brown;
+        border-top: 2.5px solid $color-brown;
       }
 
       .menu__items:nth-child(5) {
-        border-top: 2.5px solid orange;
+        border-top: 2.5px solid $color-orange;
       }
 
       .menu__items:nth-child(6) {
-        border-top: 2.5px solid purple;
+        border-top: 2.5px solid $color-pink;
       }
 
       .menu__items:nth-child(7) {
-        border-top: 2.5px solid darkblue;
+        border-top: 2.5px solid $color-tufts-blue;
       }
     }
 
     .active-item {
       position: relative;
       z-index: 1;
-      border-left: 1px solid #ccc;
-      border-right: 1px solid #ccc;
-      background-color: #f6f6f6;
+      border-left: 1px solid $color-light-gray;
+      border-right: 1px solid $color-light-gray;
+      background-color: $color-white;
     }
 
     .menu__info-more {
       display: flex;
-      color: #4b4d54;
+      color: $color-matte-gray;
       font-size: 1.5rem;
       text-transform: uppercase;
       cursor: pointer;
@@ -75,11 +75,11 @@
       display: flex;
       font-size: 1.5rem;
       justify-content: space-between;
-      background-color: #f6f6f6;
-      border-left: 1px solid #ccc;
-      border-right: 1px solid #ccc;
-      color: #4b4d54;
-      border-top: 1px solid #ccc;
+      background-color: $color-white;
+      border-left: 1px solid $color-light-gray;
+      border-right: 1px solid $color-light-gray;
+      color: $color-matte-gray;
+      border-top: 1px solid $color-light-gray;
     }
 
     .menu__item {
@@ -89,10 +89,10 @@
   }
 
   .menu__list--news {
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid $color-red;
 
     .menu__item--news:hover {
-      color: #c00;
+      color: $color-red;
     }
   }
 
@@ -101,11 +101,11 @@
 
     &:hover {
       p {
-        color: #c00;
+        color: $color-red;
       }
 
       .menu__item-svg {
-        fill: #c00;
+        fill: $color-red;
       }
     }
 
@@ -125,60 +125,60 @@
   }
 
   .menu__list--sport {
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid $color-green;
 
     .menu__item--sport:hover {
-      color: green;
+      color: $color-green;
     }
   }
 
   .menu__list--business {
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid $color-blue;
 
     .menu__item--business:hover {
-      color: blue;
+      color: $color-blue;
     }
   }
 
   .menu__list--opinion {
-    border-bottom: 2px solid brown;
+    border-bottom: 2px solid $color-brown;
 
     .menu__item--opinion:hover {
-      color: brown;
+      color: $color-brown;
     }
   }
 
   .menu__list--style {
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid $color-orange;
 
     .menu__item--style:hover {
-      color: orange;
+      color: $color-orange;
     }
   }
 
   .menu__list--culture {
-    border-bottom: 2px solid purple;
+    border-bottom: 2px solid $color-pink;
 
     .menu__item--culture:hover {
-      color: purple;
+      color: $color-pink;
     }
   }
 
   .menu__list--more {
-    border-bottom: 2px solid darkblue;
+    border-bottom: 2px solid $color-tufts-blue;
 
     .menu__item--more:hover {
-      color: darkblue;
+      color: $color-tufts-blue;
     }
   }
 }
 
 .active {
   p {
-    color: #c00;
+    color: $color-red;
   }
 
   .menu__item-svg {
-    fill: #c00;
+    fill: $color-red;
   }
 }
