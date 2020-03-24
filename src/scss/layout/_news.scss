@@ -16,6 +16,7 @@
         line-height: 2.7rem;
         font-weight: initial;
         font-size: 2.2rem;
+        cursor: pointer;
       }
 
       .news__title-img {
@@ -97,6 +98,7 @@
           text-align: inherit;
           margin-left: 10px;
           font-weight: bold;
+          cursor: pointer;
 
           .news__video-title {
             color: $color-red;
