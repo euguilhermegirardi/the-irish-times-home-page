@@ -14,6 +14,10 @@
       position: relative;
       top: 1px;
 
+      @include respond(bp-largest) {
+        font-size: 1.3rem;
+      }
+
       .menu__items {
         padding: 10px;
         margin: 0 1rem;
@@ -64,6 +68,10 @@
       text-transform: uppercase;
       cursor: pointer;
 
+      @include respond(bp-largest) {
+        font-size: 1.3rem;
+      }
+
       .menu__items-small {
         margin: 0 8px;
       }
@@ -80,6 +88,10 @@
       border-right: 1px solid $color-light-gray;
       color: $color-matte-gray;
       border-top: 1px solid $color-light-gray;
+
+      @include respond(bp-largest) {
+        font-size: 1.3rem;
+      }
     }
 
     .menu__item {

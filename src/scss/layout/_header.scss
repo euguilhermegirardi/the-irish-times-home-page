@@ -16,6 +16,11 @@
     font-size: 6rem;
     text-transform: uppercase;
     align-self: end;
+
+    @include respond(bp-largest) {
+      font-size: 4.5rem;
+      align-self: auto;
+    }
   }
 
   .header__weather {

@@ -9,4 +9,8 @@
 
   grid-row-gap: 1rem;
   grid-template-rows: 10rem 12rem 18rem 5rem auto;
+
+  @include respond(bp-largest) {
+    grid-template-rows: 10rem 8rem 15rem 5rem auto;
+  }
 }

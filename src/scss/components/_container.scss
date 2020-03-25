@@ -1,0 +1,8 @@
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+
+  @include respond(bp-largest) {
+    max-width: 850px;
+  }
+}

@@ -6,6 +6,11 @@
     minmax(min-content, 1fr) repeat(8, minmax(min-content, 12rem))
     minmax(min-content, 1fr);
   background-color: $color-matte-black;
+
+  @include respond(bp-largest) {
+    padding: 0 5rem;
+    height: 3.8rem;
+  }
 }
 
 .navbar--left {
@@ -42,6 +47,11 @@
     height: 100%;
     display: flex;
     align-items: center;
+
+    @include respond(bp-largest) {
+      padding: 0 1.3rem;
+      font-size: 1.3rem;
+    }
   }
 
   .navbar__item {
@@ -53,6 +63,11 @@
     height: 100%;
     border-left: 1px solid $color-black;
     align-items: inherit;
+
+    @include respond(bp-largest) {
+      padding: 0 1.3rem;
+      font-size: 1.3rem;
+    }
 
     &:last-child {
       border-right: 1px solid $color-black;

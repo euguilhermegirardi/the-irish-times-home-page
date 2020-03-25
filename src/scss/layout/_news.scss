@@ -151,11 +151,19 @@
 
       .news__img {
         border-radius: 3px;
+
+        @include respond(bp-largest) {
+          margin-right: 7px;
+        }
       }
 
       .news__txt {
         text-align: initial;
         width: 60%;
+      }
+
+      @include respond(bp-largest) {
+        font-size: 1.3rem;
       }
     }
 
@@ -177,6 +185,10 @@
     .news__articles {
       grid-column: 1/5;
 
+      @include respond(bp-largest) {
+        margin-top: 2.5rem;
+      }
+
       .news__art-txt {
         display: flex;
         font-size: 1.5rem;
@@ -194,6 +206,10 @@
           font-size: 3.5rem;
           font-weight: bold;
           margin-right: 1.5rem;
+
+          @include respond(bp-largest) {
+            font-size: 3.3rem;
+          }
         }
 
         &:first-child:before {
@@ -210,6 +226,11 @@
 
         &:last-child:before {
           content: "4";
+        }
+
+        @include respond(bp-largest) {
+          padding: 0;
+          font-size: 1.4rem;
         }
       }
     }
