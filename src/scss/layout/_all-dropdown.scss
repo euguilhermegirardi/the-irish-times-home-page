@@ -57,25 +57,6 @@
   }
 }
 
-.menu__li-dropdown {
-  font-family: $font-primary;
-  margin: 12px 0;
-  color: $color-matte-gray;
-
-  .menu__links-dropdown {
-    font-size: 15px;
-    color: inherit;
-
-    &:hover {
-      border-bottom: 1px solid $color-matte-gray;
-    }
-
-    @include respond(bp-largest) {
-      font-size: 14px;
-    }
-  }
-}
-
 .menu__titles-dropdown {
   text-transform: uppercase;
   display: inline-block;
@@ -90,7 +71,26 @@
   }
 
   @include respond(bp-largest) {
+    font-size: 13px;
+  }
+}
+
+.menu__li-dropdown {
+  font-family: $font-primary;
+  margin: 12px 0;
+  color: $color-matte-gray;
+
+  .menu__links-dropdown {
     font-size: 15px;
+    color: inherit;
+
+    &:hover {
+      border-bottom: 1px solid $color-matte-gray;
+    }
+
+    @include respond(bp-largest) {
+      font-size: 13px;
+    }
   }
 }
 
