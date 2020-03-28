@@ -8,19 +8,19 @@
 
   @if $breakpoint == bp-medium {
     @media only screen and (max-width: 50em) {
-      @content; // 800px
+      @content; //
     }
   }
 
-  @if $breakpoint == bp-large {
-    @media only screen and (max-width: 62.5em) {
-      @content; // 1000px
-    }
-  }
+  // @if $breakpoint == bp-large {
+  //   @media only screen and (min-width: em) and (max-width: 48.06em) {
+  //     @content; // 769px, px / 16px (default browsers)
+  //   }
+  // }
 
   @if $breakpoint == bp-largest {
-    @media only screen and (max-width: 61.25em) {
-      @content; // 980px / 16px (default browsers) = 61.25em.
+    @media only screen and (min-width: 48.06em) and (max-width: 61.25em) {
+      @content; // 980px, 769px / 16px (default browsers) = 61.25em, 48.06em.
     }
   }
 }

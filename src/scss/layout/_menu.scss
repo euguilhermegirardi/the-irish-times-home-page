@@ -69,7 +69,7 @@
       cursor: pointer;
 
       @include respond(bp-largest) {
-        font-size: 1.3rem;
+        display: none;
       }
 
       .menu__items-small {
@@ -90,13 +90,17 @@
       border-top: 1px solid $color-light-gray;
 
       @include respond(bp-largest) {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
       }
     }
 
     .menu__item {
       cursor: pointer;
       padding: 1rem;
+
+      @include respond(bp-largest) {
+        padding: 8px;
+      }
     }
   }
 

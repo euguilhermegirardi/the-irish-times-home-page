@@ -8,8 +8,9 @@
   background-color: $color-matte-black;
 
   @include respond(bp-largest) {
-    padding: 0 5rem;
-    height: 3.8rem;
+    display: flex;
+    padding: 0;
+    justify-content: center;
   }
 }
 
@@ -27,6 +28,10 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+  @include respond(bp-largest) {
+    margin-left: 9rem;
+  }
 }
 
 .navbar__links {
