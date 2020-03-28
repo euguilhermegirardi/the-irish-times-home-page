@@ -8,6 +8,14 @@
   z-index: 200;
   border-bottom: 3px solid $color-red;
 
+  @include respond(bp-large) {
+    display: none;
+  }
+
+  @include respond(bp-largest) {
+    height: 5rem;
+  }
+
   .navbar__scroll-menu {
     display: flex;
     margin: 0 auto;
@@ -15,22 +23,42 @@
     text-transform: uppercase;
     color: $color-white;
 
+    @include respond(bp-largest) {
+      max-width: 760px;
+      height: 5rem;
+    }
+
     li {
       padding: 1rem;
       font-size: 1.5rem;
       align-self: center;
       cursor: pointer;
+
+      @include respond(bp-largest) {
+        font-size: 1.2rem;
+        padding: 8px;
+      }
     }
 
     li:first-child {
       padding: 1rem 2rem;
       font-size: 3rem;
+
+      @include respond(bp-largest) {
+        font-size: 2rem;
+      }
     }
 
     li:nth-child(2) {
       background-color: $color-red;
       height: 6rem;
       padding-top: 2.1rem;
+
+      @include respond(bp-largest) {
+        height: 5rem;
+        padding-top: 1.7rem;
+        font-size: 1.2rem;
+      }
     }
 
     .navbar__scroll-dropdown {
@@ -52,6 +80,11 @@
       color: $color-black;
       height: 6rem;
       padding-top: 2.1rem;
+
+      @include respond(bp-largest) {
+        height: 5rem;
+        padding-top: 1.7rem;
+      }
     }
   }
 }

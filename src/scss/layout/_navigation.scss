@@ -7,6 +7,10 @@
     minmax(min-content, 1fr);
   background-color: $color-matte-black;
 
+  @include respond(bp-large) {
+    display: none;
+  }
+
   @include respond(bp-largest) {
     display: flex;
     padding: 0;
@@ -30,7 +34,7 @@
   align-items: center;
 
   @include respond(bp-largest) {
-    margin-left: 9rem;
+    margin-left: 7.5rem;
   }
 }
 

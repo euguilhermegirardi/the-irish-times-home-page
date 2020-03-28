@@ -18,7 +18,7 @@
     <meta property="twitter:url" content="http://the-irish-times-home-page.ie">
 
     <link rel="shortcut icon" type="image/png" href="dist/minified/assets/favicon.png">
-    <link rel="stylesheet" href="dist/minified/main.css?cb=1585386741528">
+    <link rel="stylesheet" href="dist/minified/main.css?cb=1585413519086">
     <title title="Breaking News | Irish & International Headlines | The Irish Times">Breaking News | Irish & International Headlines | The Irish Times</title>
   </head>
   <body>
@@ -414,7 +414,7 @@
       <!-- _advertisement.scss -->
       <section class="advertisement">
         <picture>
-          <source media="(max-width: 980px" srcset="dist/minified/assets/advertisement/guinness-advertisement-3x.jpg">
+          <source media="(max-width: 980px)" srcset="dist/minified/assets/advertisement/guinness-advertisement-3x.jpg">
           <img src="dist/minified/assets/advertisement/guinness-advertisement-4x.jpg" width="auto" alt="Guinness-Advertisiment"/>
         </picture>
       </section>
@@ -442,7 +442,7 @@
           <div class="news__container--left">
             <h1 class="news__title">Coronavirus: Two Irish passagers off Cambodia ship 'in isolation'.</h1>
             <picture class="news__picture">
-              <source media="(max-width: 980px" srcset="dist/minified/assets/main/coronavirus-ship-3x.jpg" alt="Coronavirus Ship">
+              <source media="(max-width: 980px)" srcset="dist/minified/assets/main/coronavirus-ship-3x.jpg" alt="Coronavirus Ship">
               <img class="news__title-img" src="dist/minified/assets/main/coronavirus-ship-4x.jpg" width="auto" alt="Coronavirus Ship"/>
             </picture>
             <small class="news__desc">The Department of Foreign Affairs is establishing wheter anyone requires medial attention.</small>
@@ -451,19 +451,42 @@
           <div class="news__container--left none">
             <h1 class="news__title">Coronavirus: Two Irish passagers off Cambodia ship 'in isolation'.</h1>
             <picture class="news__picture">
-              <source media="(max-width: 980px" srcset="dist/minified/assets/main/coronavirus-ship-3x.jpg" alt="Coronavirus Ship">
+              <source media="(max-width: 980px)" srcset="dist/minified/assets/main/coronavirus-ship-3x.jpg" alt="Coronavirus Ship">
               <img class="news__title-img" src="dist/minified/assets/main/coronavirus-ship-4x.jpg" width="auto" alt="Coronavirus Ship"/>
             </picture>
             <small class="news__desc">The Department of Foreign Affairs is establishing wheter anyone requires medial attention.</small>
           </div>
 
           <div class="news__container--right">
-            <figure class="news__figure">
-              <img class="news__figure-img"src="dist/minified/assets/main/woman-in-a-sunny-day.jpg" alt="Woman in a sunny day"/>
+            <header class="header header__small-devices">
+              <h1 class="header__title-sd">Coronavirus <span>Pandemic</span></h1>
+              <small class="header__more-sd">more ></small>
+            </header>
+            <picture class="news__figure">
+              <source media="(max-width: 769px)" srcset="dist/minified/assets/main/woman-in-a-sunny-day-sd-3x.jpg" alt="Woman in a sunny day">
+              <img class="news__figure-img" src="dist/minified/assets/main/woman-in-a-sunny-day.jpg" width="auto" alt="Woman in a sunny day"/>
               <figcaption class="news__figcaption">First Look: Wine bar opens alongside Dublin car park.</figcaption>
-            </figure>
+            </picture>
           </div>
         </section>
+
+        <!-- SECTIONS FOR SMALL DEVICES ONLY -->
+        <section class="news__container-sd">
+          <picture class="news__figure">
+              <source media="(max-width: 769px)" srcset="dist/minified/assets/main/woman-in-a-sunny-day-sd-3x.jpg" alt="Woman in a sunny day">
+              <img class="news__figure-img" src="dist/minified/assets/main/woman-in-a-sunny-day.jpg" width="auto" alt="Woman in a sunny day"/>
+              <figcaption class="news__figcaption">First Look: Wine bar opens alongside Dublin car park.</figcaption>
+            </picture>
+        </section>
+
+        <section class="news__container-sd">
+          <picture class="news__figure">
+              <source media="(max-width: 769px)" srcset="dist/minified/assets/main/woman-in-a-sunny-day-sd-3x.jpg" alt="Woman in a sunny day">
+              <img class="news__figure-img" src="dist/minified/assets/main/woman-in-a-sunny-day.jpg" width="auto" alt="Woman in a sunny day"/>
+              <figcaption class="news__figcaption">First Look: Wine bar opens alongside Dublin car park.</figcaption>
+            </picture>
+        </section>
+        <!-- SECTIONS FOR SMALL DEVICES ONLY ENDS -->
 
         <article class="news__small-container">
           <div class="news__boxes">
@@ -577,6 +600,6 @@
       </div>
     </footer>
     <!-- _footer.scss ENDS -->
-    <script src="dist/minified/all.js?cb=1585386741528"></script>
+    <script src="dist/minified/all.js?cb=1585413519086"></script>
   </body>
 </html>

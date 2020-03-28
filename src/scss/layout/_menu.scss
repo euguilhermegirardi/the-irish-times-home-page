@@ -1,6 +1,10 @@
 .menu {
   grid-column: center-start/center-end;
 
+  @include respond(bp-large) {
+    display: none;
+  }
+
   .menu__info-container {
     display: flex;
     justify-content: space-between;

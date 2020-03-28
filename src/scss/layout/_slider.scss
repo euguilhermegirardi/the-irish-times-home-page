@@ -5,6 +5,10 @@
   background-color: $color-matte-black;
   border-radius: 3px;
 
+  @include respond(bp-large) {
+    display: none;
+  }
+
   @include respond(bp-largest) {
     grid-column: 3/9;
     width: 100%;

@@ -4,13 +4,39 @@
   grid-template-columns: repeat(8, minmax(min-content, 12rem));
   grid-template-rows: minmax(28rem, 0rem) repeat(3, 15rem);
 
+  @include respond(bp-large) {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows:
+      repeat(3, minmax(min-content, 28rem)) 15rem repeat(
+        4,
+        minmax(min-content, 12rem)
+      )
+      repeat(3, minmax(min-content, 18rem));
+    grid-row-gap: 1rem;
+  }
+
   .news__container {
-    grid-column: 1/6;
+    grid-column: 1/7;
     display: grid;
     grid-template-columns: repeat(8, minmax(min-content, 12rem));
 
+    @include respond(bp-large) {
+      display: flex;
+      justify-content: center;
+    }
+
+    @include respond(bp-largest) {
+      grid-column: 1/5;
+      display: flex;
+      flex-direction: column;
+    }
+
     .news__container--left {
       grid-column: 1/3;
+
+      @include respond(bp-large) {
+        display: none;
+      }
 
       .news__title {
         line-height: 2.7rem;
@@ -69,14 +95,46 @@
       grid-column: 3/9;
       border-left: 1.5px solid $color-light-gray;
 
+      @include respond(bp-large) {
+        border-left: none;
+      }
+
+      .header__small-devices {
+        display: none;
+
+        @include respond(bp-large) {
+          display: block;
+          font-size: 1.5rem;
+          text-transform: uppercase;
+
+          .header__title-sd {
+            span {
+              font-weight: 200;
+            }
+          }
+
+          .header__more-sd {
+          }
+        }
+      }
+
       .news__figure {
         position: relative;
         display: flex;
         justify-content: center;
 
         .news__figure-img {
+          //
+
+          // REMOVE MAX-WIDTH EDITING THE REAL SIZE OF THE IMG
+
+          //
           max-width: 350px;
           border-radius: 2px;
+
+          @include respond(bp-large) {
+            max-width: none;
+          }
         }
 
         .news__figcaption {
@@ -103,13 +161,19 @@
         display: none;
       }
     }
+  }
 
-    @include respond(bp-largest) {
-      grid-column: 1/5;
+  // CONTAINER FOR SMALL DEVICES ONLY
+  .news__container-sd {
+    display: none;
+
+    @include respond(bp-large) {
       display: flex;
-      flex-direction: column;
+      justify-content: center;
+      grid-column: 1/7;
     }
   }
+  // CONTAINER FOR SMALL DEVICES ONLY ENDS!
 
   .news__small-container {
     grid-column: 1/6;
@@ -213,6 +277,10 @@
         minmax(min-content, 5rem)
       );
     grid-row-gap: 10px;
+
+    @include respond(bp-large) {
+      display: none;
+    }
 
     .news__latest-title {
       grid-column: 1/5;

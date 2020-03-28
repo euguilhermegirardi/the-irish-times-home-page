@@ -5,6 +5,10 @@
   align-items: flex-end;
   margin: 1.5rem 0;
 
+  @include respond(bp-large) {
+    display: none;
+  }
+
   .header__date {
     color: $color-matte-gray;
     font-size: 1.5rem;
