@@ -8,9 +8,10 @@ Home page built with CSS (Sass) Grid, Flexbox and JavaScript.
 4. go to localhost
 
 This project has:
-Many techniques with CSS Grid and Flexbox that are used by real professionals,
-Responsive for desktop, tablets and mobiles,
-Sass control with BEM structure,
-All the functionalities was created using VanillaJS only,
-Gulp task runner was used to compile CSS and JS to minify the files,
-It was tested in Google Chrome, Safari, Firefox and Opera.
+
+- Many techniques with CSS Grid and Flexbox that are used by real professionals,
+- Responsive for desktop, tablets and mobiles,
+- Sass control with BEM structure,
+- All the functionalities was created using VanillaJS only,
+- Gulp task runner was used to compile CSS and JS to minify the files,
+- It was tested in Google Chrome, Safari, Firefox and Opera.
