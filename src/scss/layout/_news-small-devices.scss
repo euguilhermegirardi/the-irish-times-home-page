@@ -1,0 +1,71 @@
+// CONTAINER FOR SMALL DEVICES ONLY
+.news__container-sd {
+  display: none;
+
+  @include respond(bp-large) {
+    display: flex;
+    justify-content: center;
+    grid-column: 1/7;
+  }
+}
+
+.news__feature-box {
+  display: none;
+
+  @include respond(bp-large) {
+    grid-column: 2/6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .news__feature-img {
+    margin-top: 4px;
+  }
+
+  .news__feature-box-txt {
+    border-right: 2px solid $color-red;
+    border-top: 1px solid $color-light-gray;
+    border-bottom: 1px solid $color-light-gray;
+
+    .news__feature-txt {
+      display: flex;
+      flex-direction: column;
+      text-align: inherit;
+      padding: 9px;
+
+      .news__feature-h2 {
+        font-size: 18px;
+        line-height: 1.2em;
+        padding: 8px 8px 0;
+        color: $color-red;
+      }
+
+      .news__feature-p {
+        padding: 0 8px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        font-size: 16px;
+        line-height: 18px;
+        display: block;
+        color: $color-matte-black;
+      }
+    }
+  }
+}
+
+.trending {
+  display: none;
+
+  @include respond(bp-large) {
+    grid-column: 1/7;
+    display: flex;
+  }
+
+  .trending__img {
+  }
+
+  .trending__h4 {
+  }
+}
+// CONTAINER FOR SMALL DEVICES ONLY ENDS!

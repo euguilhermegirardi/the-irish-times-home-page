@@ -16,11 +16,12 @@
   }
 
   .news__container {
-    grid-column: 1/7;
+    grid-column: 1/6;
     display: grid;
     grid-template-columns: repeat(8, minmax(min-content, 12rem));
 
     @include respond(bp-large) {
+      grid-column: 1/7;
       display: flex;
       justify-content: center;
     }
@@ -99,6 +100,10 @@
         border-left: none;
       }
 
+      @include respond(bp-largest) {
+        display: none;
+      }
+
       .header__small-devices {
         display: none;
 
@@ -117,63 +122,53 @@
           }
         }
       }
+    }
+  }
 
-      .news__figure {
-        position: relative;
-        display: flex;
-        justify-content: center;
+  // Outside to be reused for all media queries
+  .news__figure {
+    position: relative;
+    display: flex;
+    justify-content: center;
 
-        .news__figure-img {
-          //
+    .news__figure-img {
+      //
 
-          // REMOVE MAX-WIDTH EDITING THE REAL SIZE OF THE IMG
+      // REMOVE MAX-WIDTH EDITING THE REAL SIZE OF THE IMG
 
-          //
-          max-width: 350px;
-          border-radius: 2px;
+      //
+      max-width: 350px;
+      border-radius: 2px;
 
-          @include respond(bp-large) {
-            max-width: none;
-          }
-        }
-
-        .news__figcaption {
-          position: absolute;
-          bottom: 0px;
-          left: 11px;
-          color: $color-white;
-          font-size: 1.5rem;
-          width: 94%;
-          line-height: 2.5rem;
-          background-image: linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0) 0%,
-            rgba(0, 0, 0, 1) 70%
-          );
-          padding-left: 1rem;
-          padding-bottom: 1rem;
-          border-bottom-right-radius: 4px;
-          border-bottom-left-radius: 4px;
-        }
-      }
-
-      @include respond(bp-largest) {
-        display: none;
+      @include respond(bp-large) {
+        max-width: none;
       }
     }
   }
 
-  // CONTAINER FOR SMALL DEVICES ONLY
-  .news__container-sd {
-    display: none;
+  .news__figcaption {
+    position: absolute;
+    bottom: 0px;
+    left: 11px;
+    color: $color-white;
+    font-size: 1.5rem;
+    width: 94%;
+    line-height: 2.5rem;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 70%
+    );
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
 
     @include respond(bp-large) {
-      display: flex;
-      justify-content: center;
-      grid-column: 1/7;
+      width: 100%;
+      left: 0;
     }
   }
-  // CONTAINER FOR SMALL DEVICES ONLY ENDS!
 
   .news__small-container {
     grid-column: 1/6;
