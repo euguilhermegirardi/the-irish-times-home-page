@@ -74,9 +74,18 @@
   overflow-x: hidden;
   height: 100%;
   background-color: firebrick;
+  -webkit-transition: 0.5s linear;
+  -moz-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  transition: 0.5s linear;
 }
 
 .nav-sd__open {
   width: 250px;
-  transition: 0.3s linear;
+  -webkit-transition: 0.5s linear;
+  -moz-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  transition: 0.5s linear;
 }
