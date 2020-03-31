@@ -9,10 +9,45 @@
     margin: 0 2rem;
   }
 
-  .nav-sd__icon {
-    font-size: 2.5rem;
-    color: $color-matte-gray;
+  .nav-sd__icon-container {
+    height: 2.5rem;
+    width: 2.5rem;
     cursor: pointer;
+
+    .nav-sd__icon {
+      position: absolute;
+      border: 1.5px solid $color-matte-gray;
+      width: 2.5rem;
+      transition: 0.55s;
+    }
+
+    .icon-top {
+      top: 1.1rem;
+    }
+
+    .icon-middle {
+      top: 1.75rem;
+    }
+
+    .icon-bottom {
+      top: 2.5rem;
+    }
+
+    .top-opened {
+      top: 1.8rem;
+      transform: rotate(50deg);
+      transition: 0.55s 0.5s;
+    }
+
+    .middle-opened {
+      opacity: 0;
+    }
+
+    .bottom-opened {
+      top: 1.8rem;
+      transform: rotate(-410deg);
+      transition: 0.55s 0.5s;
+    }
   }
 
   .nav-sd__title {
@@ -29,6 +64,10 @@
   }
 }
 
+.nav-sd__icon-active {
+  background: none !important;
+}
+
 // MENU
 .nav-sd__menu {
   width: 0;
@@ -39,4 +78,5 @@
 
 .nav-sd__open {
   width: 250px;
+  transition: 0.3s linear;
 }
