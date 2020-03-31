@@ -201,7 +201,7 @@
       max-width: 50%;
 
       @include respond(bp-large) {
-        max-width: 460px;
+        max-width: 440px;
         display: flex;
         flex-direction: column;
         border-bottom: 1px solid #ccc;

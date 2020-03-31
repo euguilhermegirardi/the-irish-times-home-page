@@ -1,0 +1,42 @@
+.nav-sd {
+  display: none;
+
+  @include respond(bp-large) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    margin: 0 2rem;
+  }
+
+  .nav-sd__icon {
+    font-size: 2.5rem;
+    color: $color-matte-gray;
+    cursor: pointer;
+  }
+
+  .nav-sd__title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .nav-sd__svg {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-matte-gray;
+    cursor: pointer;
+  }
+}
+
+// MENU
+.nav-sd__menu {
+  width: 0;
+  overflow-x: hidden;
+  height: 100%;
+  background-color: firebrick;
+}
+
+.nav-sd__open {
+  width: 250px;
+}

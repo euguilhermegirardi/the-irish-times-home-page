@@ -6,11 +6,21 @@
   height: 10rem;
   background-color: $color-matte-black;
 
+  @include respond(bp-large) {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
   .footer__title {
     text-transform: uppercase;
     color: $color-light-gray;
     margin-right: 3rem;
     font-size: 15px;
+
+    @include respond(bp-large) {
+      margin-right: 0;
+      margin-bottom: 1.2rem;
+    }
   }
 
   .footer__container {
@@ -33,9 +43,5 @@
     .footer__top {
       margin-bottom: 5px;
     }
-  }
-
-  @include respond(bp-largest) {
-    margin-top: 2rem;
   }
 }
