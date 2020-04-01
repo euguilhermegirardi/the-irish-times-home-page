@@ -1,17 +1,21 @@
 const icon = document.querySelector('.nav-sd__icon-container');
 const menu = document.querySelector('.nav-sd__menu');
-const iconTop = document.querySelector('.icon-top');
-const iconMiddle = document.querySelector('.icon-middle');
-const iconBottom = document.querySelector('.icon-bottom');
 
+const iconList = document.querySelector('.nav-sd__close-icon-container');
+const openedIcon = iconList.querySelectorAll('.nav-sd__close-icon');
+
+const close = document.querySelector('.nav-sd__close-icon-container');
+
+// OPEN MENU
 icon.addEventListener('click', openMenu);
-
 function openMenu() {
-  menu.classList.toggle('nav-sd__open');
-  iconTop.classList.toggle('top-opened');
-  iconMiddle.classList.toggle('middle-opened');
-  iconBottom.classList.toggle('bottom-opened');
+  menu.classList.add('nav-sd__open');
 }
+
+// CLOSE MENU
+close.addEventListener('click', function closeMenu() {
+  menu.classList.remove('nav-sd__open');
+});
 
 window.addEventListener('keydown', event => {
   if (event.key === 'Escape') {

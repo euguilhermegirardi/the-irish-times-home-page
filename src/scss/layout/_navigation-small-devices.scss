@@ -32,22 +32,6 @@
     .icon-bottom {
       top: 2.5rem;
     }
-
-    .top-opened {
-      top: 1.8rem;
-      transform: rotate(50deg);
-      transition: 0.55s 0.5s;
-    }
-
-    .middle-opened {
-      opacity: 0;
-    }
-
-    .bottom-opened {
-      top: 1.8rem;
-      transform: rotate(-410deg);
-      transition: 0.55s 0.5s;
-    }
   }
 
   .nav-sd__title {
@@ -64,10 +48,6 @@
   }
 }
 
-.nav-sd__icon-active {
-  background: none !important;
-}
-
 // MENU
 .nav-sd__menu {
   width: 0;
@@ -79,6 +59,60 @@
   -ms-transition: 0.5s linear;
   -o-transition: 0.5s linear;
   transition: 0.5s linear;
+  position: absolute;
+  top: -40px;
+  z-index: 6666666;
+
+  .nav-sd__container {
+    display: none;
+
+    @include respond(bp-large) {
+      display: block;
+    }
+    .nav-sd__close-icon-container {
+      position: relative;
+      top: 4rem;
+      height: 2.5rem;
+      width: 2.5rem;
+      cursor: pointer;
+      background-color: $color-matte-black;
+
+      .nav-sd__close-icon {
+        position: absolute;
+        border: 1.5px solid $color-white;
+        width: 2.5rem;
+        transition: 0.55s;
+      }
+
+      .close-icon-top {
+        top: 1.2rem;
+        transform: rotate(50deg);
+        transition: 0.55s 0.5s;
+      }
+
+      .close-icon-bottom {
+        top: 1.2rem;
+        transform: rotate(-410deg);
+        transition: 0.55s 0.5s;
+      }
+    }
+
+    .nav-sd__header {
+      width: 25rem;
+      text-align: center;
+      height: 2.5rem;
+      padding-top: 6px;
+      font-size: 1.3rem;
+      background-color: $color-matte-black;
+      color: $color-white;
+    }
+
+    .nav-sd__button {
+      position: relative;
+      top: 4rem;
+      width: 100%;
+    }
+  }
 }
 
 .nav-sd__open {
