@@ -52,74 +52,144 @@
 .nav-sd__menu {
   width: 0;
   overflow-x: hidden;
-  height: 100%;
-  background-color: firebrick;
+  position: absolute;
+  top: 0;
+  z-index: 6666666;
+  background-color: $color-white;
   -webkit-transition: 0.5s linear;
   -moz-transition: 0.5s linear;
   -ms-transition: 0.5s linear;
   -o-transition: 0.5s linear;
-  transition: 0.5s linear;
-  position: absolute;
-  top: -40px;
-  z-index: 6666666;
+  transition: 0.2s linear;
+
+  .nav-sd__close-icon-container {
+    background-color: $color-matte-black;
+    padding: 1.5rem;
+
+    .nav-sd__close-icon {
+      position: absolute;
+      border: 1.5px solid $color-white;
+      width: 1.5rem;
+      cursor: pointer;
+    }
+
+    .close-icon-top {
+      top: 1.5rem;
+      transform: rotate(50deg);
+    }
+
+    .close-icon-bottom {
+      top: 1.5rem;
+      transform: rotate(-410deg);
+    }
+
+    .nav-sd__header {
+      text-align: center;
+      height: 2.5rem;
+      padding-top: 3px;
+      font-size: 1.7rem;
+      letter-spacing: 1px;
+      background-color: $color-matte-black;
+      color: $color-white;
+    }
+  }
 
   .nav-sd__container {
     display: none;
 
     @include respond(bp-large) {
-      display: block;
-    }
-    .nav-sd__close-icon-container {
-      position: relative;
-      top: 4rem;
-      height: 2.5rem;
-      width: 2.5rem;
-      cursor: pointer;
-      background-color: $color-matte-black;
-
-      .nav-sd__close-icon {
-        position: absolute;
-        border: 1.5px solid $color-white;
-        width: 2.5rem;
-        transition: 0.55s;
-      }
-
-      .close-icon-top {
-        top: 1.2rem;
-        transform: rotate(50deg);
-        transition: 0.55s 0.5s;
-      }
-
-      .close-icon-bottom {
-        top: 1.2rem;
-        transform: rotate(-410deg);
-        transition: 0.55s 0.5s;
-      }
-    }
-
-    .nav-sd__header {
-      width: 25rem;
-      text-align: center;
-      height: 2.5rem;
-      padding-top: 6px;
-      font-size: 1.3rem;
-      background-color: $color-matte-black;
-      color: $color-white;
+      display: flex;
+      flex-direction: column;
     }
 
     .nav-sd__button {
-      position: relative;
-      top: 4rem;
-      width: 100%;
+      background-color: $color-mustard-yellow;
+      text-transform: uppercase;
+      padding: 1rem;
+      font-size: 1.5em;
+      letter-spacing: 1px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .nav-sd__input {
+      outline: none;
+      padding: 8px;
+    }
+
+    .nav-sd__weather {
+      display: flex;
+      padding-left: 1rem;
+      justify-content: flex-start;
+      background-color: $color-matte-black;
+      align-items: center;
+
+      .nav-sd__svg {
+        fill: $color-light-gray;
+        height: 4rem;
+        width: 4rem;
+      }
+
+      .nav-sd__degress {
+        color: $color-light-gray;
+        font-size: 2.8rem;
+        font-weight: 600;
+        display: flex;
+        margin-left: 1.5rem;
+
+        span {
+          color: $color-white;
+          font-size: 1.4rem;
+          font-weight: 600;
+        }
+      }
+
+      .nav-sd__date {
+        color: $color-white;
+        margin-left: 1.5rem;
+
+        .nav-sd__week {
+          font-weight: 300;
+          letter-spacing: 1px;
+          font-size: 1.1rem;
+        }
+
+        .nav-sd__city {
+          font-weight: 600;
+          letter-spacing: 1px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .nav-sd__ul {
+      .nav-sd__list-item {
+        border-left: 2px solid red;
+        display: flex;
+
+        .nav-sd__item-svg {
+          height: 2rem;
+          width: 2rem;
+          fill: red;
+          margin-left: 1.2rem;
+        }
+
+        .nav-sd__item {
+          font-size: 1.8rem;
+          letter-spacing: 1.5px;
+          font-weight: 400;
+          margin-left: 1rem;
+        }
+      }
     }
   }
 }
 
 .nav-sd__open {
-  width: 250px;
+  width: 370px;
   -webkit-transition: 0.5s linear;
   -moz-transition: 0.5s linear;
   -ms-transition: 0.5s linear;
   -o-transition: 0.5s linear;
-  transition: 0.5s linear;
+  transition: 0.2s linear;
 }
