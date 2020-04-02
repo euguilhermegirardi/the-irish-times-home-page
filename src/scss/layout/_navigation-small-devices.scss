@@ -164,13 +164,18 @@
 
     .nav-sd__ul {
       .nav-sd__list-item {
-        border-left: 2px solid red;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem 1rem 0;
+        border-bottom: 1px solid $color-matte-black;
+        border-left: 2px solid $color-red;
+        cursor: pointer;
 
         .nav-sd__item-svg {
           height: 2rem;
           width: 2rem;
-          fill: red;
+          fill: $color-red;
           margin-left: 1.2rem;
         }
 
