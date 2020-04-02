@@ -56,30 +56,42 @@
   top: 0;
   z-index: 6666666;
   background-color: $color-white;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
   -webkit-transition: 0.5s linear;
   -moz-transition: 0.5s linear;
   -ms-transition: 0.5s linear;
   -o-transition: 0.5s linear;
   transition: 0.2s linear;
 
-  .nav-sd__close-icon-container {
+  .nav-sd__header {
     background-color: $color-matte-black;
     padding: 1.5rem;
 
+    .icon-container {
+      height: 1.8rem;
+      width: 1.8rem;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      padding: 1.2rem;
+      cursor: pointer;
+    }
+
     .nav-sd__close-icon {
       position: absolute;
+      top: 11px;
+      right: 4px;
       border: 1.5px solid $color-white;
       width: 1.5rem;
       cursor: pointer;
     }
 
     .close-icon-top {
-      top: 1.5rem;
       transform: rotate(50deg);
     }
 
     .close-icon-bottom {
-      top: 1.5rem;
       transform: rotate(-410deg);
     }
 
@@ -110,6 +122,10 @@
       letter-spacing: 1px;
       font-weight: 500;
       cursor: pointer;
+
+      &:hover {
+        background-color: $color-dark-mustard-yellow;
+      }
     }
 
     .nav-sd__input {
@@ -169,13 +185,15 @@
         align-items: center;
         padding: 1rem 2rem 1rem 0;
         border-bottom: 1px solid $color-matte-black;
-        border-left: 2px solid $color-red;
         cursor: pointer;
+
+        &:hover {
+          background-color: #ccc;
+        }
 
         .nav-sd__item-svg {
           height: 2rem;
           width: 2rem;
-          fill: $color-red;
           margin-left: 1.2rem;
         }
 
@@ -184,6 +202,102 @@
           letter-spacing: 1.5px;
           font-weight: 400;
           margin-left: 1rem;
+        }
+      }
+
+      .nav-sd__list-item--news {
+        border-left: 3px solid $color-red;
+
+        .nav-sd__item-svg {
+          fill: $color-red;
+        }
+      }
+
+      .nav-sd__list-item--sport {
+        border-left: 3px solid $color-green;
+
+        .nav-sd__item-svg {
+          fill: $color-green;
+        }
+      }
+
+      .nav-sd__list-item--business {
+        border-left: 3px solid $color-blue;
+
+        .nav-sd__item-svg {
+          fill: $color-blue;
+        }
+      }
+
+      .nav-sd__list-item--opinion {
+        border-left: 3px solid $color-brown;
+
+        .nav-sd__item-svg {
+          fill: $color-brown;
+        }
+      }
+
+      .nav-sd__list-item--life-and-style {
+        border-left: 3px solid $color-orange;
+
+        .nav-sd__item-svg {
+          fill: $color-orange;
+        }
+      }
+
+      .nav-sd__list-item--culture {
+        border-left: 3px solid $color-pink;
+
+        .nav-sd__item-svg {
+          fill: $color-pink;
+        }
+      }
+
+      .nav-sd__list-item--more {
+        border-left: 3px solid $color-tufts-blue;
+
+        .nav-sd__item-svg {
+          fill: $color-tufts-blue;
+        }
+      }
+
+      .nav-sd__list-item--sub-menu {
+        display: none;
+        border-left: 3px solid #c00;
+        padding: 1px 0;
+
+        &:hover {
+          background-color: none;
+        }
+
+        .nav-sd__sub-menu {
+          .nav-sd__sub-list-item {
+            padding: 8px 0 8px 2rem;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            font-weight: 400;
+            border-bottom: 1px solid #ccc;
+
+            &:nth-last-child() {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+
+      // OTHER
+      .nav-sd__list-item--others {
+        justify-content: flex-start;
+        border-left: 2px solid #333;
+
+        .nav-sd__item-svg--others {
+          fill: #333;
+        }
+
+        .nav-sd__item--others {
+          margin-left: 1rem;
+          font-size: 1.8rem;
+          letter-spacing: 1px;
         }
       }
     }
