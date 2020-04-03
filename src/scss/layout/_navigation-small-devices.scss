@@ -204,6 +204,7 @@
           height: 2rem;
           width: 2rem;
           margin-left: 1.2rem;
+          transition: transform 0.25s ease-in-out;
         }
 
         // SVG COLORS
@@ -233,6 +234,10 @@
 
         .nav-sd__item-svg--more {
           fill: $color-tufts-blue;
+        }
+
+        .svg-open {
+          transform: rotate(180deg);
         }
         // SVG COLORS ENDS
       }

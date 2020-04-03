@@ -18,10 +18,11 @@ const closeItem = (item) => {
   if(dropdown) {
     dropdown.style.maxHeight = null;
   }
-  // var icon = tab.firstElementChild;
-  // if(icon) {
-  //   icon.innerHTML = '';
-  // }
+
+  var svg = item.children[1];
+  if(svg) {
+    svg.classList.remove('svg-open');
+  }
 }
 
 const openItem = (item) => {
@@ -33,10 +34,10 @@ const openItem = (item) => {
     dropdown.style.maxHeight = dropdown.scrollHeight + 'px';
   }
 
-  // var icon = dropdown.firstElemtentChild;
-  // if(icon) {
-  //   icon.innerHTML = 'X';
-  // }
+  var svg = item.children[1];
+  if(svg) {
+    svg.classList.add('svg-open');
+  }
 }
 
 const closeOtherItems = (item) => {
