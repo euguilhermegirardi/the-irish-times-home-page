@@ -95,7 +95,7 @@
       transform: rotate(-410deg);
     }
 
-    .nav-sd__header {
+    .nav-sd__header-title {
       text-align: center;
       height: 2.5rem;
       padding-top: 3px;
@@ -106,6 +106,7 @@
     }
   }
 
+  // CONTAINER FLEXBOX
   .nav-sd__container {
     display: none;
 
@@ -178,6 +179,7 @@
       }
     }
 
+    // MENU LIST
     .nav-sd__ul {
       .nav-sd__list-item {
         display: flex;
@@ -191,91 +193,69 @@
           background-color: #ccc;
         }
 
-        .nav-sd__item-svg {
-          height: 2rem;
-          width: 2rem;
-          margin-left: 1.2rem;
-        }
-
         .nav-sd__item {
           font-size: 1.8rem;
           letter-spacing: 1.5px;
           font-weight: 400;
           margin-left: 1rem;
         }
-      }
-
-      // .nav-sd__list-item--news {
-      //   border-left: 3px solid $color-red;
-      // }
-
-      .nav-sd__item-svg {
-        fill: $color-red;
-      }
-
-      .nav-sd__list-item--sport {
-        border-left: 3px solid $color-green;
 
         .nav-sd__item-svg {
+          height: 2rem;
+          width: 2rem;
+          margin-left: 1.2rem;
+        }
+
+        // SVG COLORS
+        .nav-sd__item-svg--news {
+          fill: $color-red;
+        }
+
+        .nav-sd__item-svg--sport {
           fill: $color-green;
         }
-      }
 
-      .nav-sd__list-item--business {
-        border-left: 3px solid $color-blue;
-
-        .nav-sd__item-svg {
+        .nav-sd__item-svg--business {
           fill: $color-blue;
         }
-      }
 
-      .nav-sd__list-item--opinion {
-        border-left: 3px solid $color-brown;
-
-        .nav-sd__item-svg {
+        .nav-sd__item-svg--opinion {
           fill: $color-brown;
         }
-      }
 
-      .nav-sd__list-item--life-and-style {
-        border-left: 3px solid $color-orange;
-
-        .nav-sd__item-svg {
+        .nav-sd__item-svg--life {
           fill: $color-orange;
         }
-      }
 
-      .nav-sd__list-item--culture {
-        border-left: 3px solid $color-pink;
-
-        .nav-sd__item-svg {
+        .nav-sd__item-svg--culture {
           fill: $color-pink;
         }
-      }
 
-      .nav-sd__list-item--more {
-        border-left: 3px solid $color-tufts-blue;
-
-        .nav-sd__item-svg {
+        .nav-sd__item-svg--more {
           fill: $color-tufts-blue;
         }
+        // SVG COLORS ENDS
       }
 
+      // SUB MENU
       .nav-sd__list-item--sub-menu {
         display: none;
-        padding: 1px 0;
 
-        &:hover {
-          background-color: none;
-        }
+        .nav-sd__sub-menu-list {
+          background-color: $color-light-gray;
 
-        .nav-sd__sub-menu {
-          .nav-sd__sub-list-item {
+          .nav-sd__sub-menu-item {
             padding: 8px 0 8px 2rem;
             font-size: 1.2rem;
             letter-spacing: 1px;
             font-weight: 400;
-            border-bottom: 1px solid #ccc;
+            border-bottom: 1px solid $color-black;
+            cursor: pointer;
+
+            &:hover {
+              background-color: $color-matte-gray;
+              filter: brightness(1.5);
+            }
           }
 
           &:nth-last-child() {
@@ -287,7 +267,7 @@
       // OTHER
       .nav-sd__list-item--others {
         justify-content: flex-start;
-        border-left: 2px solid #333;
+        border-left: 3px solid #333;
 
         .nav-sd__item-svg--others {
           fill: #333;
@@ -303,6 +283,7 @@
   }
 }
 
+// MENU OPENED
 .nav-sd__open {
   width: 370px;
   -webkit-transition: 0.5s linear;
@@ -312,11 +293,36 @@
   transition: 0.2s linear;
 }
 
+// LI ACTIVED
 .nav-sd__active {
-  background-color: $color-matte-gray;
+  background-color: $color-light-gray;
 }
 
 // BORDER-LEFT
-.nav-sd__border-news {
+.border-news {
   border-left: 3px solid $color-red;
+}
+
+.border-sport {
+  border-left: 3px solid $color-green;
+}
+
+.border-business {
+  border-left: 3px solid $color-blue;
+}
+
+.border-opinion {
+  border-left: 3px solid $color-brown;
+}
+
+.border-life {
+  border-left: 3px solid $color-orange;
+}
+
+.border-culture {
+  border-left: 3px solid $color-pink;
+}
+
+.border-more {
+  border-left: 3px solid $color-tufts-blue;
 }
