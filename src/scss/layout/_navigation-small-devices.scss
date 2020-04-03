@@ -239,7 +239,8 @@
 
       // SUB MENU
       .nav-sd__list-item--sub-menu {
-        display: none;
+        max-height: 0;
+        overflow: hidden;
 
         .nav-sd__sub-menu-list {
           background-color: $color-light-gray;
@@ -296,6 +297,15 @@
 // LI ACTIVED
 .nav-sd__active {
   background-color: $color-light-gray;
+}
+
+// SUB MENU BLOCK AND NONE
+.submenu-open {
+  display: block;
+}
+
+.submenu-closed {
+  display: none;
 }
 
 // BORDER-LEFT
