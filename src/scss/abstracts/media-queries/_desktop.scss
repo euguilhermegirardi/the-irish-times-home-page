@@ -1,0 +1,46 @@
+@mixin respond($size) {
+  /*1920 px / 16 px (default browsers)*/
+
+  @if $size == smaller-desktop {
+    @media only screen and (min-width: 20em) /*320px*/ {
+      @content;
+    }
+  }
+
+  @if $size == small-desktop {
+    @media only screen and (min-width: 30em) /*480px*/ {
+      @content;
+    }
+  }
+
+  @if $size == medium-desktop {
+    @media only screen and (min-width: 48em) /*768px*/ {
+      @content;
+    }
+  }
+
+  @if $size == big-desktop {
+    @media only screen and (min-width: 75em) /*1200px*/ {
+      @content;
+    }
+  }
+
+  @if $size == full-hd {
+    @media only screen and (min-width: 120em) /*1920px*/ {
+      @content;
+    }
+  }
+
+  // @if $size == bp-large {
+  //   @media only screen and (min-width: 30em) and (max-width: 48.06em) {
+  //     @content; // 769px, 480px / 16px (default browsers)
+  //   }
+  // }
+
+  // @if $size == bp-largest {
+  //   @media only screen and (min-width: 48.06em) and (max-width: 61.25em) {
+  //     @content; // 980px, 769px / 16px (default browsers) = 61.25em, 48.06em.
+  //   }
+  // }
+  /* ----------- DESKTOPS ENDS ----------- */
+}
