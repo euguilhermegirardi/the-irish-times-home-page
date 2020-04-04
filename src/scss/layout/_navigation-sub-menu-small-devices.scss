@@ -1,0 +1,293 @@
+.nav-sd__menu {
+  width: 0;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: -2px;
+  z-index: 6666666;
+  background-color: $color-white;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  -webkit-transition: 0.5s linear;
+  -moz-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  transition: 0.2s linear;
+
+  .nav-sd__header {
+    background-color: $color-matte-black;
+    padding: 1.5rem;
+
+    .icon-container {
+      height: 1.8rem;
+      width: 1.8rem;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      padding: 1.2rem;
+      cursor: pointer;
+    }
+
+    .nav-sd__close-icon {
+      position: absolute;
+      top: 11px;
+      right: 4px;
+      border: 1.5px solid $color-white;
+      width: 1.5rem;
+      cursor: pointer;
+    }
+
+    .close-icon-top {
+      transform: rotate(50deg);
+    }
+
+    .close-icon-bottom {
+      transform: rotate(-410deg);
+    }
+
+    .nav-sd__header-title {
+      text-align: center;
+      height: 2.5rem;
+      padding-top: 3px;
+      font-size: 1.7rem;
+      letter-spacing: 1px;
+      background-color: $color-matte-black;
+      color: $color-white;
+    }
+  }
+
+  // CONTAINER FLEXBOX
+  .nav-sd__container {
+    display: none;
+
+    @include respond(bp-large) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-sd__button {
+      background-color: $color-mustard-yellow;
+      text-transform: uppercase;
+      padding: 1rem;
+      font-size: 1.5em;
+      letter-spacing: 1px;
+      font-weight: 500;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-dark-mustard-yellow;
+      }
+    }
+
+    .nav-sd__input {
+      outline: none;
+      padding: 8px;
+    }
+
+    .nav-sd__weather {
+      display: flex;
+      padding-left: 1rem;
+      justify-content: flex-start;
+      background-color: $color-matte-black;
+      align-items: center;
+
+      .nav-sd__svg {
+        fill: $color-light-gray;
+        height: 4rem;
+        width: 4rem;
+      }
+
+      .nav-sd__degress {
+        color: $color-light-gray;
+        font-size: 2.8rem;
+        font-weight: 600;
+        display: flex;
+        margin-left: 1.5rem;
+
+        span {
+          color: $color-white;
+          font-size: 1.4rem;
+          font-weight: 600;
+        }
+      }
+
+      .nav-sd__date {
+        color: $color-white;
+        margin-left: 1.5rem;
+
+        .nav-sd__week {
+          font-weight: 300;
+          letter-spacing: 1px;
+          font-size: 1.1rem;
+        }
+
+        .nav-sd__city {
+          font-weight: 600;
+          letter-spacing: 1px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    // MENU LIST
+    .nav-sd__ul {
+      .nav-sd__list-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem 1rem 0;
+        border-bottom: 1px solid $color-matte-black;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #ccc;
+        }
+
+        .nav-sd__item {
+          font-size: 1.8rem;
+          letter-spacing: 1.5px;
+          font-weight: 400;
+          margin-left: 1rem;
+        }
+
+        .nav-sd__item-svg {
+          height: 2rem;
+          width: 2rem;
+          margin-left: 1.2rem;
+          transition: transform 0.25s ease-in-out;
+        }
+
+        // SVG COLORS
+        .nav-sd__item-svg--news {
+          fill: $color-red;
+        }
+
+        .nav-sd__item-svg--sport {
+          fill: $color-green;
+        }
+
+        .nav-sd__item-svg--business {
+          fill: $color-blue;
+        }
+
+        .nav-sd__item-svg--opinion {
+          fill: $color-brown;
+        }
+
+        .nav-sd__item-svg--life {
+          fill: $color-orange;
+        }
+
+        .nav-sd__item-svg--culture {
+          fill: $color-pink;
+        }
+
+        .nav-sd__item-svg--more {
+          fill: $color-tufts-blue;
+        }
+
+        .svg-open {
+          transform: rotate(180deg);
+        }
+        // SVG COLORS ENDS
+      }
+
+      // SUB MENU
+      .nav-sd__list-item--sub-menu {
+        max-height: 0;
+        overflow: hidden;
+
+        .nav-sd__sub-menu-list {
+          background-color: $color-light-gray;
+
+          .nav-sd__sub-menu-item {
+            padding: 8px 0 8px 2rem;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            font-weight: 400;
+            border-bottom: 1px solid $color-black;
+            cursor: pointer;
+
+            &:hover {
+              background-color: $color-matte-gray;
+              filter: brightness(1.5);
+            }
+          }
+
+          &:nth-last-child() {
+            border-bottom: none;
+          }
+        }
+      }
+
+      // OTHER
+      .nav-sd__list-item--others {
+        justify-content: flex-start;
+        border-left: 6px solid #333;
+
+        .nav-sd__item-svg--others {
+          fill: #333;
+        }
+
+        .nav-sd__item--others {
+          margin-left: 1rem;
+          font-size: 1.8rem;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
+
+// MENU OPENED
+.nav-sd__open {
+  width: 370px;
+  -webkit-transition: 0.5s linear;
+  -moz-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  transition: 0.2s linear;
+}
+
+// LI ACTIVED
+.nav-sd__active {
+  background-color: $color-light-gray;
+}
+
+// SUB MENU BLOCK AND NONE
+.submenu-open {
+  display: block;
+}
+
+.submenu-closed {
+  display: none;
+}
+
+// BORDER-LEFT
+.border-news {
+  border-left: 6px solid $color-red;
+}
+
+.border-sport {
+  border-left: 6px solid $color-green;
+}
+
+.border-business {
+  border-left: 6px solid $color-blue;
+}
+
+.border-opinion {
+  border-left: 6px solid $color-brown;
+}
+
+.border-life {
+  border-left: 6px solid $color-orange;
+}
+
+.border-culture {
+  border-left: 6px solid $color-pink;
+}
+
+.border-more {
+  border-left: 6px solid $color-tufts-blue;
+}

@@ -230,6 +230,7 @@
 
         .news__img {
           border-radius: 3px;
+          transition: 0.3s ease-out;
 
           @include respond(bp-large) {
             border-radius: 2px;
@@ -276,6 +277,7 @@
           .news__video-txt {
             font-size: 10px;
             color: $color-matte-gray;
+            transition: 0.3s ease-out;
 
             @include respond(bp-large) {
               font-size: 1.4rem;
@@ -293,6 +295,14 @@
           margin-top: 0;
           flex-direction: column;
         }
+      }
+
+      .news__video:hover .news__video-txt {
+        color: $color-dark-blue;
+      }
+
+      .news__video:hover .news__img {
+        filter: brightness(55%);
       }
 
       @include respond(bp-largest) {
