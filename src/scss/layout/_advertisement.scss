@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
 
-  @include respond(bp-large) {
+  @include small-desktop {
     display: none;
   }
 }

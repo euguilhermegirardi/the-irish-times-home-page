@@ -6,7 +6,7 @@
   height: 10rem;
   background-color: $color-matte-black;
 
-  @include respond(bp-large) {
+  @include small-desktop {
     flex-direction: column;
     margin-top: 2rem;
   }
@@ -17,7 +17,7 @@
     margin-right: 3rem;
     font-size: 15px;
 
-    @include respond(bp-large) {
+    @include small-desktop {
       margin-right: 0;
       margin-bottom: 1.2rem;
     }

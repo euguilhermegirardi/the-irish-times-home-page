@@ -8,11 +8,11 @@
   z-index: 200;
   border-bottom: 3px solid $color-red;
 
-  @include respond(bp-large) {
+  @include small-desktop {
     display: none;
   }
 
-  @include respond(bp-largest) {
+  @include medium-desktop {
     height: 5rem;
   }
 
@@ -23,7 +23,7 @@
     text-transform: uppercase;
     color: $color-white;
 
-    @include respond(bp-largest) {
+    @include medium-desktop {
       max-width: 760px;
       height: 5rem;
     }
@@ -34,7 +34,7 @@
       align-self: center;
       cursor: pointer;
 
-      @include respond(bp-largest) {
+      @include medium-desktop {
         font-size: 1.2rem;
         padding: 8px;
       }
@@ -44,7 +44,7 @@
       padding: 1rem 2rem;
       font-size: 3rem;
 
-      @include respond(bp-largest) {
+      @include medium-desktop {
         font-size: 2rem;
       }
     }
@@ -54,7 +54,7 @@
       height: 6rem;
       padding-top: 2.1rem;
 
-      @include respond(bp-largest) {
+      @include medium-desktop {
         height: 5rem;
         padding-top: 1.7rem;
         font-size: 1.2rem;
@@ -81,7 +81,7 @@
       height: 6rem;
       padding-top: 2.1rem;
 
-      @include respond(bp-largest) {
+      @include medium-desktop {
         height: 5rem;
         padding-top: 1.7rem;
       }

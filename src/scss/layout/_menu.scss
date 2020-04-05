@@ -1,7 +1,7 @@
 .menu {
   grid-column: center-start/center-end;
 
-  @include respond(bp-large) {
+  @include small-desktop {
     display: none;
   }
 
@@ -18,7 +18,7 @@
       position: relative;
       top: 1px;
 
-      @include respond(bp-largest) {
+      @include medium-desktop {
         font-size: 1.3rem;
       }
 
@@ -72,7 +72,7 @@
       text-transform: uppercase;
       cursor: pointer;
 
-      @include respond(bp-largest) {
+      @include medium-desktop {
         display: none;
       }
 
@@ -93,7 +93,7 @@
       color: $color-matte-gray;
       border-top: 1px solid $color-light-gray;
 
-      @include respond(bp-largest) {
+      @include medium-desktop {
         font-size: 1.2rem;
       }
     }
@@ -102,7 +102,7 @@
       cursor: pointer;
       padding: 1rem;
 
-      @include respond(bp-largest) {
+      @include medium-desktop {
         padding: 8px;
       }
     }

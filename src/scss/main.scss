@@ -1,4 +1,7 @@
-@import "abstracts/mixins";
+@import "abstracts/media-queries/desktop";
+@import "abstracts/media-queries/laptop";
+@import "abstracts/media-queries/mobile";
+@import "abstracts/media-queries/tablet";
 @import "abstracts/utilities";
 @import "abstracts/variables";
 

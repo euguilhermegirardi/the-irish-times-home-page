@@ -60,7 +60,7 @@
   .nav-sd__container {
     display: none;
 
-    @include respond(bp-large) {
+    @include small-desktop {
       display: flex;
       flex-direction: column;
     }

@@ -2,7 +2,7 @@
 .news__container-sd {
   display: none;
 
-  @include respond(bp-large) {
+  @include small-desktop {
     display: flex;
     justify-content: center;
     grid-column: 1/7;
@@ -13,7 +13,7 @@
 .news__feature-box {
   display: none;
 
-  @include respond(bp-large) {
+  @include small-desktop {
     grid-column: 2/6;
     max-width: 290px;
     margin: 0 auto;
@@ -71,7 +71,7 @@
     color: $color-dark-blue;
   }
 
-  @include respond(bp-large) {
+  @include small-desktop {
     grid-column: 1/7;
     display: flex;
     justify-content: center;

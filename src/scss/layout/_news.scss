@@ -4,7 +4,7 @@
   grid-template-columns: repeat(8, minmax(min-content, 12rem));
   grid-template-rows: minmax(28rem, 0rem) repeat(3, 15rem);
 
-  @include respond(bp-large) {
+  @include small-desktop {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows:
       repeat(3, minmax(min-content, auto)) 20rem repeat(
@@ -20,13 +20,13 @@
     display: grid;
     grid-template-columns: repeat(8, minmax(min-content, 12rem));
 
-    @include respond(bp-large) {
+    @include small-desktop {
       grid-column: 1/7;
       display: flex;
       justify-content: center;
     }
 
-    @include respond(bp-largest) {
+    @include medium-desktop {
       grid-column: 1/5;
       display: flex;
       flex-direction: column;
@@ -35,7 +35,7 @@
     .news__container--left {
       grid-column: 1/3;
 
-      @include respond(bp-large) {
+      @include small-desktop {
         display: none;
       }
 
@@ -45,7 +45,7 @@
         font-size: 2.2rem;
         cursor: pointer;
 
-        @include respond(bp-largest) {
+        @include medium-desktop {
           grid-column: 4/7;
           text-align: center;
           align-self: center;
@@ -55,7 +55,7 @@
       }
 
       .news__picture {
-        @include respond(bp-largest) {
+        @include medium-desktop {
           display: grid;
           grid-row: 1/3;
           grid-column: 1/4;
@@ -66,7 +66,7 @@
         margin: 1rem 0;
         border-radius: 3px;
 
-        @include respond(bp-largest) {
+        @include medium-desktop {
           grid-column: 1/4;
           grid-row: 1/3;
           max-width: 20rem;
@@ -79,14 +79,14 @@
         font-size: 1rem;
         font-weight: initial;
 
-        @include respond(bp-largest) {
+        @include medium-desktop {
           grid-column: 4/7;
           text-align: center;
           font-size: 11px;
         }
       }
 
-      @include respond(bp-largest) {
+      @include medium-desktop {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
       }
@@ -96,18 +96,18 @@
       grid-column: 3/9;
       border-left: 1.5px solid $color-light-gray;
 
-      @include respond(bp-large) {
+      @include small-desktop {
         border-left: none;
       }
 
-      @include respond(bp-largest) {
+      @include medium-desktop {
         display: none;
       }
 
       .header__small-devices {
         display: none;
 
-        @include respond(bp-large) {
+        @include small-desktop {
           display: block;
           font-size: 1.5rem;
           text-transform: uppercase;
@@ -142,7 +142,7 @@
       max-width: 350px;
       border-radius: 2px;
 
-      @include respond(bp-large) {
+      @include small-desktop {
         max-width: none;
       }
     }
@@ -166,7 +166,7 @@
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
 
-    @include respond(bp-large) {
+    @include small-desktop {
       width: 100%;
       left: 0;
     }
@@ -180,18 +180,18 @@
     &:nth-child(2) {
       margin: 3rem 0;
 
-      @include respond(bp-largest) {
+      @include medium-desktop {
         margin: 1rem 0;
       }
     }
 
-    @include respond(bp-large) {
+    @include small-desktop {
       grid-column: 1/7;
       flex-direction: column;
       margin-bottom: 0;
     }
 
-    @include respond(bp-largest) {
+    @include medium-desktop {
       grid-column: 1/5;
       display: grid;
       grid-template-columns: repeat(2, auto);
@@ -202,7 +202,7 @@
     .news__boxes {
       max-width: 50%;
 
-      @include respond(bp-large) {
+      @include small-desktop {
         max-width: 440px;
         display: flex;
         flex-direction: column;
@@ -214,7 +214,7 @@
         color: $color-black;
         font-size: 1.4rem;
 
-        @include respond(bp-largest) {
+        @include medium-desktop {
           text-align: center;
         }
       }
@@ -223,7 +223,7 @@
         display: flex;
         margin-top: 1rem;
 
-        @include respond(bp-large) {
+        @include small-desktop {
           margin-top: 2px;
           margin-top: 0;
         }
@@ -232,11 +232,11 @@
           border-radius: 3px;
           transition: 0.3s ease-out;
 
-          @include respond(bp-large) {
+          @include small-desktop {
             border-radius: 2px;
           }
 
-          @include respond(bp-largest) {
+          @include medium-desktop {
             align-self: center;
           }
         }
@@ -248,11 +248,11 @@
           font-weight: bold;
           cursor: pointer;
 
-          @include respond(bp-large) {
+          @include small-desktop {
             max-width: 300px;
           }
 
-          @include respond(bp-largest) {
+          @include medium-desktop {
             max-width: 100%;
           }
 
@@ -263,13 +263,13 @@
               color: $color-black;
             }
 
-            @include respond(bp-large) {
+            @include small-desktop {
               font-size: 1.2rem;
               letter-spacing: 1px;
               font-weight: 500;
             }
 
-            @include respond(bp-largest) {
+            @include medium-desktop {
               text-align: center;
             }
           }
@@ -279,19 +279,19 @@
             color: $color-matte-gray;
             transition: 0.3s ease-out;
 
-            @include respond(bp-large) {
+            @include small-desktop {
               font-size: 1.4rem;
               font-weight: 400;
               color: $color-matte-black;
             }
 
-            @include respond(bp-largest) {
+            @include medium-desktop {
               font-weight: 400;
             }
           }
         }
 
-        @include respond(bp-largest) {
+        @include medium-desktop {
           margin-top: 0;
           flex-direction: column;
         }
@@ -305,7 +305,7 @@
         filter: brightness(55%);
       }
 
-      @include respond(bp-largest) {
+      @include medium-desktop {
         max-width: 100%;
       }
     }
@@ -323,7 +323,7 @@
       );
     grid-row-gap: 10px;
 
-    @include respond(bp-large) {
+    @include small-desktop {
       display: none;
     }
 
@@ -342,7 +342,7 @@
       align-items: center;
       font-size: 1.8rem;
 
-      @include respond(bp-largest) {
+      @include medium-desktop {
         font-size: 1.4rem;
       }
 
@@ -355,7 +355,7 @@
       .news__img {
         border-radius: 3px;
 
-        @include respond(bp-largest) {
+        @include medium-desktop {
           margin-right: 7px;
         }
       }
@@ -402,7 +402,7 @@
           font-weight: bold;
           margin-right: 1.5rem;
 
-          @include respond(bp-largest) {
+          @include medium-desktop {
             font-size: 3.3rem;
           }
         }
@@ -423,7 +423,7 @@
           content: "4";
         }
 
-        @include respond(bp-largest) {
+        @include medium-desktop {
           align-items: center;
           padding: 0;
           font-size: 1.4rem;
@@ -431,13 +431,13 @@
       }
     }
 
-    @include respond(bp-largest) {
+    @include medium-desktop {
       grid-column: 5/10;
       margin-left: 2rem;
     }
   }
 
-  @include respond(bp-largest) {
+  @include medium-desktop {
     grid-row-gap: 1.5rem;
     margin-top: 2rem;
   }

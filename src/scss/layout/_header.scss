@@ -5,7 +5,7 @@
   align-items: flex-end;
   margin: 1.5rem 0;
 
-  @include respond(bp-large) {
+  @include small-desktop {
     display: none;
   }
 
@@ -21,7 +21,7 @@
     text-transform: uppercase;
     align-self: end;
 
-    @include respond(bp-largest) {
+    @include medium-desktop {
       font-size: 4.5rem;
       align-self: auto;
     }

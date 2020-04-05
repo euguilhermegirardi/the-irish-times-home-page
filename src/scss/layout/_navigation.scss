@@ -7,11 +7,15 @@
     minmax(min-content, 1fr);
   background-color: $color-matte-black;
 
-  @include respond(bp-large) {
+  // @include smaller-devices {
+  //   display: none;
+  // }
+
+  @include small-desktop {
     display: none;
   }
 
-  @include respond(bp-largest) {
+  @include medium-desktop {
     display: flex;
     padding: 0;
     justify-content: center;
@@ -33,7 +37,7 @@
   justify-content: flex-end;
   align-items: center;
 
-  @include respond(bp-largest) {
+  @include medium-desktop {
     margin-left: 7.5rem;
   }
 }
@@ -57,7 +61,7 @@
     display: flex;
     align-items: center;
 
-    @include respond(bp-largest) {
+    @include medium-desktop {
       padding: 0 1.3rem;
       font-size: 1.3rem;
     }
@@ -73,7 +77,7 @@
     border-left: 1px solid $color-black;
     align-items: inherit;
 
-    @include respond(bp-largest) {
+    @include medium-desktop {
       padding: 0 1.3rem;
       font-size: 1.3rem;
     }
