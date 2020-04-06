@@ -2,6 +2,10 @@
 .news__container-sd {
   display: none;
 
+  @include smaller-devices {
+    margin-bottom: 1rem;
+  }
+
   @include small-desktop {
     display: flex;
     justify-content: center;
@@ -12,6 +16,11 @@
 // ONE BOX FEATURES
 .news__feature-box {
   display: none;
+
+  @include smaller-devices {
+    max-width: 270px !important;
+    margin: 2rem 0 !important;
+  }
 
   @include small-desktop {
     grid-column: 2/6;
@@ -71,6 +80,10 @@
     color: $color-dark-blue;
   }
 
+  @include smaller-devices {
+    max-width: 270px;
+  }
+
   @include small-desktop {
     grid-column: 1/7;
     display: flex;
@@ -87,5 +100,15 @@
     font-size: 1.5rem;
     line-height: 2rem;
     cursor: pointer;
+
+    @include smaller-devices {
+      line-height: normal;
+    }
+
+    @include smaller-devices {
+      font-size: 1.3rem;
+      padding: 0;
+      margin-left: 5px;
+    }
   }
 }

@@ -53,6 +53,12 @@
       letter-spacing: 1px;
       background-color: $color-matte-black;
       color: $color-white;
+
+      @include smaller-devices {
+        font-size: 1.3rem;
+        height: 1rem;
+        padding-top: 0;
+      }
     }
   }
 
@@ -76,6 +82,11 @@
 
       &:hover {
         background-color: $color-dark-mustard-yellow;
+      }
+
+      @include smaller-devices {
+        font-size: 1.3rem;
+        padding: 5px;
       }
     }
 
@@ -143,11 +154,19 @@
           background-color: #ccc;
         }
 
+        @include smaller-devices {
+          padding: 8px 2rem 8px 0;
+        }
+
         .nav-sd__item {
           font-size: 1.8rem;
           letter-spacing: 1.5px;
           font-weight: 400;
           margin-left: 1rem;
+
+          @include smaller-devices {
+            font-size: 1.5rem;
+          }
         }
 
         .nav-sd__item-svg {
@@ -155,6 +174,11 @@
           width: 2rem;
           margin-left: 1.2rem;
           transition: transform 0.25s ease-in-out;
+
+          @include smaller-devices {
+            height: 1.5rem;
+            width: 1.5rem;
+          }
         }
 
         // SVG COLORS
@@ -233,6 +257,10 @@
           margin-left: 1rem;
           font-size: 1.8rem;
           letter-spacing: 1px;
+
+          @include smaller-devices {
+            font-size: 1.5rem;
+          }
         }
       }
     }
@@ -247,20 +275,15 @@
   -ms-transition: 0.5s linear;
   -o-transition: 0.5s linear;
   transition: 0.2s linear;
+
+  @include smaller-devices {
+    width: 250px;
+  }
 }
 
 // LI ACTIVED
 .nav-sd__active {
   background-color: $color-light-gray;
-}
-
-// SUB MENU BLOCK AND NONE
-.submenu-open {
-  display: block;
-}
-
-.submenu-closed {
-  display: none;
 }
 
 // BORDER-LEFT

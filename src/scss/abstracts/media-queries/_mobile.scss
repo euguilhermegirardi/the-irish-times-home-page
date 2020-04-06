@@ -1,8 +1,5 @@
-@mixin for-size($size) {
-  /* ----------- MOBILE ----------- */
-
-  /* ----------- MOBILE ENDS ----------- */
-}
-/*320 px / 16 px (default browsers)*/
-
-// SAME CONFIGURATION TO 320px UP TO 479px
+// @mixin iphoneX {
+//   @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+//     @content;
+//   }
+// }

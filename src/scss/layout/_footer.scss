@@ -6,6 +6,10 @@
   height: 10rem;
   background-color: $color-matte-black;
 
+  @include smaller-devices {
+    margin-top: 0;
+  }
+
   @include small-desktop {
     flex-direction: column;
     margin-top: 2rem;
@@ -24,6 +28,24 @@
   }
 
   .footer__container {
+    @include smaller-devices {
+      padding: 0 2rem;
+    }
+
+    .footer__top {
+      margin-bottom: 5px;
+
+      @include smaller-devices {
+        margin: 0 auto;
+      }
+    }
+
+    .footer__bottom {
+      @include smaller-devices {
+        display: none;
+      }
+    }
+
     .footer__links {
       padding: 3px;
       font-size: 13px;
@@ -38,10 +60,11 @@
         position: relative;
         color: $color-light-gray;
       }
-    }
 
-    .footer__top {
-      margin-bottom: 5px;
+      @include smaller-devices {
+        margin: 1px;
+        padding: 0;
+      }
     }
   }
 }

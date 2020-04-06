@@ -1,4 +1,9 @@
 .container {
   max-width: 1170px;
   margin: 0 auto;
+
+  @include smaller-devices {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }

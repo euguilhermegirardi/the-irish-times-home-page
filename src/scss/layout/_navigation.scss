@@ -7,10 +7,6 @@
     minmax(min-content, 1fr);
   background-color: $color-matte-black;
 
-  // @include smaller-devices {
-  //   display: none;
-  // }
-
   @include small-desktop {
     display: none;
   }

@@ -1,5 +1,5 @@
 // Most smartphones and small devices
-@mixin small-desktop {
+@mixin smaller-devices {
   @media only screen and (min-width: 321px) and (max-width: 480px) {
     @content;
   }
@@ -7,7 +7,8 @@
 
 // Low Resolution Tablets, Mobiles (Landscape)
 @mixin small-desktop {
-  @media only screen and (min-width: 481px) and (max-width: 767px) {
+  @media only screen and (min-width: 481px) and (max-width: 767px),
+    only screen and (min-width: 321px) and (max-width: 480px) {
     @content;
   }
 }
@@ -20,15 +21,15 @@
 }
 
 // desktop and laptop
-@mixin desktop-laptop {
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    @content;
-  }
-}
+// @mixin desktop-laptop {
+//   @media (min-width: 1025px) and (max-width: 1280px) {
+//     @content;
+//   }
+// }
 
 // higher resolution desktops
-@mixin full-hd {
-  @media (min-width: 1281px) {
-    @content;
-  }
-}
+// @mixin full-hd {
+//   @media (min-width: 1281px) {
+//     @content;
+//   }
+// }
