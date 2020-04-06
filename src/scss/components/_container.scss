@@ -4,6 +4,13 @@
 
   @include smaller-devices {
     max-width: 320px;
-    margin: 0 auto;
+  }
+
+  @include small-desktop {
+    max-width: 481px;
+  }
+
+  @include medium-desktop {
+    max-width: 765px;
   }
 }

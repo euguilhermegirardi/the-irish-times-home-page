@@ -131,8 +131,8 @@
             }
           }
 
-          .header__more-sd {
-          }
+          // .header__more-sd {
+          // }
         }
       }
     }
@@ -191,7 +191,7 @@
   .news__small-container {
     grid-column: 1/6;
     display: flex;
-    margin-bottom: 3rem;
+    align-items: center;
 
     &:nth-child(2) {
       margin: 3rem 0;

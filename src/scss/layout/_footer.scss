@@ -15,6 +15,10 @@
     margin-top: 2rem;
   }
 
+  @include medium-desktop {
+    margin-top: 2rem;
+  }
+
   .footer__title {
     text-transform: uppercase;
     color: $color-light-gray;
