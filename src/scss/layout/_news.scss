@@ -415,7 +415,7 @@
     @include ipad {
       grid-template-columns: repeat(5, minmax(min-content, 6rem));
       grid-template-rows: 15rem 2rem repeat(2, minmax(min-content, 5rem)) 20rem 2rem repeat(
-          3,
+          1,
           minmax(min-content, 5rem)
         );
     }
@@ -455,6 +455,8 @@
       @include ipad {
         grid-row: 3/4;
         grid-column: 1/6;
+        font-size: 1.4rem;
+        justify-content: normal;
       }
 
       @include medium-desktop {
@@ -465,8 +467,19 @@
         border-radius: 3px;
         transition: 0.3s ease-out;
 
+        @include ipad {
+          width: 50%;
+        }
+
         @include medium-desktop {
           margin-right: 7px;
+        }
+      }
+
+      .news__txt {
+        @include ipad {
+          width: 50%;
+          margin-left: 1.5rem;
         }
       }
     }
@@ -512,7 +525,7 @@
 
       @include ipad {
         grid-row: 7/8;
-        grid-column: 1/5;
+        grid-column: 1/6;
       }
 
       .news__art-txt {

@@ -24,6 +24,10 @@
       position: relative;
       top: 1px;
 
+      @include ipad {
+        font-size: 1.2rem;
+      }
+
       @include medium-desktop {
         font-size: 1.3rem;
       }
@@ -103,6 +107,10 @@
       color: $color-matte-gray;
       border-top: 1px solid $color-light-gray;
 
+      @include ipad {
+        font-size: 1.2rem;
+      }
+
       @include medium-desktop {
         font-size: 1.2rem;
       }
@@ -118,6 +126,12 @@
         text-align: center;
         padding: 5px;
         margin: 5px 0;
+      }
+    }
+
+    .menu__item:nth-child(2) {
+      @include ipad {
+        display: none;
       }
     }
   }
