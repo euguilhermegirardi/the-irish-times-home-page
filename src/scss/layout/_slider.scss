@@ -5,6 +5,11 @@
   background-color: $color-matte-black;
   border-radius: 3px;
 
+  @include ipad {
+    width: 100%;
+    grid-column: 3/9;
+  }
+
   @include small-desktop {
     display: none;
   }

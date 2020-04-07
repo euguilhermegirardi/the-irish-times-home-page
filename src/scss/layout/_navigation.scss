@@ -7,6 +7,11 @@
     minmax(min-content, 1fr);
   background-color: $color-matte-black;
 
+  @include ipad {
+    display: flex;
+    justify-content: center;
+  }
+
   @include small-desktop {
     display: none;
   }
@@ -32,6 +37,10 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+  @include ipad {
+    margin-left: 1.7rem;
+  }
 
   @include medium-desktop {
     margin-left: 7.3rem;
@@ -72,6 +81,10 @@
     height: 100%;
     border-left: 1px solid $color-black;
     align-items: inherit;
+
+    @include ipad {
+      font-size: 1.4rem;
+    }
 
     @include medium-desktop {
       padding: 0 1.3rem;

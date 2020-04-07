@@ -1,6 +1,12 @@
 .menu {
   grid-column: center-start/center-end;
 
+  @include ipad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   @include small-desktop {
     display: none;
   }
@@ -71,6 +77,10 @@
       font-size: 1.5rem;
       text-transform: uppercase;
       cursor: pointer;
+
+      @include ipad {
+        display: none;
+      }
 
       @include medium-desktop {
         display: none;

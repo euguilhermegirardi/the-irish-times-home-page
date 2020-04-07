@@ -2,6 +2,11 @@
   max-width: 1170px;
   margin: 0 auto;
 
+  @include ipad {
+    max-width: 768px;
+    padding: 0 1rem;
+  }
+
   @include smaller-devices {
     max-width: 320px;
   }

@@ -5,12 +5,6 @@
   }
 }
 
-@mixin ipad-pro-10 {
-  @media only screen and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) {
-    @content;
-  }
-}
-
 @mixin ipad-pro-12 {
   @media only screen and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
     @content;
