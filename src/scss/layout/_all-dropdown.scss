@@ -27,7 +27,6 @@
 
     @include medium-desktop {
       width: 100%;
-      margin-left: 4rem;
     }
   }
 
@@ -39,7 +38,6 @@
     vertical-align: top;
 
     @include medium-desktop {
-      margin-left: 4rem;
       display: flex;
     }
   }

@@ -11,6 +11,7 @@
   }
 
   @include medium-desktop {
-    max-width: 765px;
+    max-width: 768px;
+    padding: 0 2rem;
   }
 }

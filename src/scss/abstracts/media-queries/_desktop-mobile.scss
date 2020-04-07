@@ -19,17 +19,3 @@
     @content;
   }
 }
-
-// desktop and laptop
-// @mixin desktop-laptop {
-//   @media (min-width: 1025px) and (max-width: 1280px) {
-//     @content;
-//   }
-// }
-
-// higher resolution desktops
-// @mixin full-hd {
-//   @media (min-width: 1281px) {
-//     @content;
-//   }
-// }

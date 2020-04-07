@@ -2,6 +2,7 @@
   grid-column: center-start/center-end;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   @include small-desktop {
     display: none;

@@ -103,7 +103,11 @@
       padding: 1rem;
 
       @include medium-desktop {
-        padding: 8px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+        margin: 5px 0;
       }
     }
   }
