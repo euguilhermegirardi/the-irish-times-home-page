@@ -12,6 +12,7 @@
 
   @include ipad {
     grid-template-rows: 9rem 12rem 14rem 5rem auto;
+    padding: 0 2rem;
   }
 
   @include small-desktop {

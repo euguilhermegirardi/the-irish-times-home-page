@@ -1,10 +1,11 @@
 .news {
   grid-column: center-start/center-end;
   display: grid;
-  grid-template-columns: repeat(8, minmax(min-content, 12rem));
+  grid-template-columns: repeat(9, minmax(min-content, 12rem));
   grid-template-rows: minmax(28rem, 0rem) repeat(3, 15rem);
 
   @include ipad {
+    grid-template-columns: repeat(5, 8.5rem) repeat(4, 7.5rem);
     grid-template-rows: repeat(4, minmax(min-content, auto));
     grid-row-gap: 2rem;
   }
@@ -261,7 +262,7 @@
         font-size: 1.4rem;
 
         @include ipad {
-          font-size: 2rem;
+          font-size: 1.7rem;
           font-weight: 500;
           letter-spacing: 1px;
         }
@@ -399,24 +400,6 @@
     }
   }
 
-  // .news__small-container:nth-child(1) {
-  //   @include ipad {
-  //     grid-row: 3/4;
-  //   }
-  // }
-
-  // .news__small-container:nth-child(2) {
-  //   @include ipad {
-  //     grid-row: 4/5;
-  //   }
-  // }
-
-  // .news__small-container:nth-child(3) {
-  //   @include ipad {
-  //     grid-row: 5/6;
-  //   }
-  // }
-
   // ASIDE
   .news__latest {
     grid-column: 6 / 10;
@@ -429,6 +412,14 @@
       );
     grid-row-gap: 10px;
 
+    @include ipad {
+      grid-template-columns: repeat(5, minmax(min-content, 6rem));
+      grid-template-rows: 15rem 2rem repeat(2, minmax(min-content, 5rem)) 20rem 2rem repeat(
+          3,
+          minmax(min-content, 5rem)
+        );
+    }
+
     @include small-desktop {
       display: none;
     }
@@ -439,6 +430,18 @@
       height: 2rem;
       text-transform: uppercase;
       font-size: 1.5rem;
+
+      @include ipad {
+        grid-column: 1/6;
+        grid-row: 2/3;
+      }
+    }
+
+    .news__latest-title:nth-child(1) {
+      @include ipad {
+        grid-column: 1/6;
+        grid-row: 6/7;
+      }
     }
 
     .news__videos {
@@ -448,6 +451,11 @@
       align-items: center;
       font-size: 1.8rem;
       cursor: pointer;
+
+      @include ipad {
+        grid-row: 3/4;
+        grid-column: 1/6;
+      }
 
       @include medium-desktop {
         font-size: 1.4rem;
@@ -460,6 +468,13 @@
         @include medium-desktop {
           margin-right: 7px;
         }
+      }
+    }
+
+    .news__videos:nth-child(2) {
+      @include ipad {
+        grid-row: 4/5;
+        grid-column: 1/6;
       }
     }
 
@@ -481,6 +496,11 @@
       grid-column: 1/5;
       margin: 1rem 0;
 
+      @include ipad {
+        grid-row: 5/6;
+        grid-column: 1/6;
+      }
+
       .news__adv-img {
         width: 100%;
         height: 100%;
@@ -489,6 +509,11 @@
 
     .news__articles {
       grid-column: 1/5;
+
+      @include ipad {
+        grid-row: 7/8;
+        grid-column: 1/5;
+      }
 
       .news__art-txt {
         display: flex;

@@ -17,6 +17,12 @@
 .news__feature-box {
   display: none;
 
+  @include ipad {
+    display: flex;
+    grid-column: 6/10;
+    grid-row: 1/2;
+  }
+
   @include smaller-devices {
     max-width: 270px !important;
     margin: 2rem 0 !important;
