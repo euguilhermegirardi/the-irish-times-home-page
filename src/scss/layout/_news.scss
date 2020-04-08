@@ -6,7 +6,7 @@
 
   @include ipad {
     grid-template-columns: repeat(5, 8.5rem) repeat(4, 7.5rem);
-    grid-template-rows: repeat(4, minmax(min-content, auto));
+    grid-template-rows: repeat(5, minmax(min-content, auto));
     grid-row-gap: 2rem;
   }
 
@@ -173,17 +173,7 @@
     cursor: pointer;
 
     .news__figure-img {
-      //
-
-      // REMOVE MAX-WIDTH EDITING THE REAL SIZE OF THE IMG
-
-      //
-      max-width: 350px;
       border-radius: 2px;
-
-      @include small-desktop {
-        max-width: none;
-      }
     }
   }
 
@@ -204,6 +194,11 @@
     padding-bottom: 1rem;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
+
+    @include ipad {
+      width: 400px;
+      left: 0;
+    }
 
     @include small-desktop {
       width: 100%;
@@ -226,6 +221,7 @@
 
     @include ipad {
       flex-direction: column;
+      justify-content: center;
     }
 
     @include small-desktop {
@@ -262,7 +258,7 @@
         font-size: 1.4rem;
 
         @include ipad {
-          font-size: 1.7rem;
+          font-size: 1.5rem;
           font-weight: 500;
           letter-spacing: 1px;
         }
@@ -280,11 +276,22 @@
         }
       }
 
+      .news__boxes > .news__boxes-titles:first-child {
+        @include ipad {
+          border-top: 1px solid #ccc;
+          padding-top: 7px;
+          width: 95%;
+        }
+      }
+
       .news__video {
         display: flex;
         margin-top: 1rem;
 
         @include ipad {
+          border-bottom: 1px solid #ccc;
+          width: 95%;
+          padding-bottom: 1rem;
           margin-top: 5px;
         }
 
@@ -296,6 +303,11 @@
         .news__img {
           border-radius: 3px;
           transition: 0.3s ease-out;
+
+          @include ipad {
+            width: 170px;
+            height: 85px;
+          }
 
           @include small-desktop {
             border-radius: 2px;
@@ -314,7 +326,7 @@
           cursor: pointer;
 
           @include ipad {
-            max-width: 100%;
+            max-width: 50%;
           }
 
           @include small-desktop {
@@ -333,7 +345,7 @@
             }
 
             @include ipad {
-              font-size: 1.5rem;
+              font-size: 1.2rem;
               letter-spacing: 1px;
             }
 
@@ -359,8 +371,9 @@
             transition: 0.3s ease-out;
 
             @include ipad {
-              font-size: 1.5rem;
-              font-weight: 500;
+              font-size: 1.3rem;
+              font-weight: 400;
+              line-height: 18px;
               letter-spacing: 0.5px;
             }
 
@@ -535,6 +548,11 @@
         color: $color-matte-gray;
         border-bottom: 1px solid $color-matte-gray;
 
+        @include ipad {
+          font-size: 1.3rem;
+          padding: 5px;
+        }
+
         &:hover {
           color: $color-dark-blue;
           text-decoration: none;
@@ -546,8 +564,18 @@
           font-weight: bold;
           margin-right: 1.5rem;
 
+          @include ipad {
+            font-size: 3rem;
+          }
+
           @include medium-desktop {
             font-size: 3.3rem;
+          }
+        }
+
+        &:first-child {
+          @include ipad {
+            margin-top: -1rem;
           }
         }
 
@@ -591,11 +619,13 @@
 .news > .news__small-container:nth-child(10) {
   @include ipad {
     grid-row: 4/5;
+    margin-top: -2rem;
   }
 }
 
 .news > .news__small-container:nth-child(11) {
   @include ipad {
     grid-row: 5/6;
+    margin-top: -2rem;
   }
 }

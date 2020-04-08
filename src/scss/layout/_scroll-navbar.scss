@@ -28,11 +28,16 @@
       height: 5rem;
     }
 
-    li {
+    .navbar__scroll-li {
       padding: 1rem;
       font-size: 1.5rem;
       align-self: center;
       cursor: pointer;
+
+      @include ipad {
+        font-size: 1.2rem;
+        padding: 9px;
+      }
 
       @include medium-desktop {
         font-size: 1.2rem;
@@ -40,19 +45,30 @@
       }
     }
 
-    li:first-child {
+    .navbar__scroll-li:first-child {
       padding: 1rem 2rem;
       font-size: 3rem;
+
+      @include ipad {
+        font-size: 2.2rem;
+        padding: 5px 1.5rem;
+      }
 
       @include medium-desktop {
         font-size: 2rem;
       }
     }
 
-    li:nth-child(2) {
+    .navbar__scroll-li:nth-child(2) {
       background-color: $color-red;
       height: 6rem;
       padding-top: 2.1rem;
+
+      @include ipad {
+        font-size: 1.2rem;
+        padding-top: 1.5rem;
+        height: 4.5rem;
+      }
 
       @include medium-desktop {
         height: 5rem;
@@ -80,6 +96,11 @@
       color: $color-black;
       height: 6rem;
       padding-top: 2.1rem;
+
+      @include ipad {
+        height: 4.5rem;
+        padding-top: 1.5rem;
+      }
 
       @include medium-desktop {
         height: 5rem;
