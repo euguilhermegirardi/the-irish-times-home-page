@@ -94,10 +94,11 @@
   border-bottom: 1px solid #ccc;
 
   @include ipad {
-    display: flex;
-    grid-row: 4/5;
+    display: grid;
     grid-column: 6/10;
-    margin-bottom: 14rem;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, minmax(min-content, auto));
+    max-height: 80px;
     padding: 0;
     border: none;
   }
@@ -146,7 +147,10 @@
     cursor: pointer;
 
     @include ipad {
-      max-width: 36%;
+      display: flex;
+      align-items: center;
+      max-width: 155px;
+      height: 80px;
       font-size: 1.3rem;
       line-height: 1.5rem;
       padding: 0;
@@ -167,18 +171,27 @@
 
 .news > .trending:nth-child(5) {
   @include ipad {
-    margin-bottom: -6rem;
+    grid-row: 4/5;
   }
 }
 
 .news > .trending:nth-child(6) {
   @include ipad {
-    margin-bottom: -26rem;
+    grid-row: 4/5;
+    margin-top: 10rem;
   }
 }
 
 .news > .trending:nth-child(7) {
   @include ipad {
-    margin-bottom: -46rem;
+    grid-row: 5/6;
+    margin-top: -4rem;
+  }
+}
+
+.news > .trending:nth-child(8) {
+  @include ipad {
+    grid-row: 5/6;
+    margin-top: 7rem;
   }
 }
