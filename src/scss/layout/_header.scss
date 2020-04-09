@@ -21,11 +21,11 @@
     text-transform: uppercase;
     align-self: end;
 
-    @include ipad {
-      font-size: 4.8rem;
-      margin-right: 2.4rem;
-      align-self: baseline;
-    }
+    // @include ipad {
+    //   font-size: 4.8rem;
+    //   margin-right: 2.4rem;
+    //   align-self: baseline;
+    // }
 
     @include medium-desktop {
       font-size: 4.5rem;

@@ -6,9 +6,9 @@
   height: 10rem;
   background-color: $color-matte-black;
 
-  @include ipad-pro-12 {
-    height: 10.6rem;
-  }
+  // @include ipad-pro-12 {
+  //   height: 10.6rem;
+  // }
 
   @include smaller-devices {
     margin-top: 0;

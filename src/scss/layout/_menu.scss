@@ -1,11 +1,11 @@
 .menu {
   grid-column: center-start/center-end;
 
-  @include ipad {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+  // @include ipad {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  // }
 
   @include small-desktop {
     display: none;
@@ -24,9 +24,9 @@
       position: relative;
       top: 1px;
 
-      @include ipad {
-        font-size: 1.2rem;
-      }
+      // @include ipad {
+      //   font-size: 1.2rem;
+      // }
 
       @include medium-desktop {
         font-size: 1.3rem;
@@ -82,9 +82,9 @@
       text-transform: uppercase;
       cursor: pointer;
 
-      @include ipad {
-        display: none;
-      }
+      // @include ipad {
+      //   display: none;
+      // }
 
       @include medium-desktop {
         display: none;
@@ -107,9 +107,9 @@
       color: $color-matte-gray;
       border-top: 1px solid $color-light-gray;
 
-      @include ipad {
-        font-size: 1.2rem;
-      }
+      // @include ipad {
+      //   font-size: 1.2rem;
+      // }
 
       @include medium-desktop {
         font-size: 1.2rem;
@@ -129,11 +129,11 @@
       }
     }
 
-    .menu__item:nth-child(2) {
-      @include ipad {
-        display: none;
-      }
-    }
+    // .menu__item:nth-child(2) {
+    //   @include ipad {
+    //     display: none;
+    //   }
+    // }
   }
 
   .menu__list--news {
