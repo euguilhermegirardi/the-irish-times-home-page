@@ -8,6 +8,10 @@
   },
   "author": "Girardi",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/euguilhermegirardi/the-irish-times-home-page.git"
+  },
   "dependencies": {
     "autoprefixer": "^9.7.4",
     "browser-sync": "^2.26.7",
