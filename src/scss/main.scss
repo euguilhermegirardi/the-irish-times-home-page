@@ -5,17 +5,19 @@
 @import "base/base";
 
 @import "components/container";
+@import "components/footer";
 @import "components/grid-container";
+@import "components/navbar";
 
 @import "layout/advertisement";
 @import "layout/all-dropdown";
-@import "layout/footer";
 @import "layout/header";
 @import "layout/menu";
 @import "layout/navigation-small-devices";
 @import "layout/navigation-sub-menu-small-devices";
-@import "layout/navigation";
-@import "layout/news-small-devices";
+@import "layout/news__container-sd";
+@import "layout/news__latest";
+@import "layout/news__small-container";
 @import "layout/news";
 @import "layout/scroll-navbar";
 @import "layout/search-dropdown";

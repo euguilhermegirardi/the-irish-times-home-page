@@ -1,0 +1,134 @@
+.news__latest {
+  grid-column: 6 / 10;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(min-content, 12rem));
+  grid-row: 1/4;
+  grid-template-rows: 2rem repeat(2, minmax(min-content, 5rem)) 20rem 2rem repeat(
+      2,
+      minmax(min-content, 5rem)
+    );
+  grid-row-gap: 10px;
+
+  @include small-desktop {
+    display: none;
+  }
+
+  .news__latest-title {
+    grid-column: 1/5;
+    border-bottom: 1px solid $color-black;
+    height: 2rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+
+  .news__videos {
+    grid-column: 1/5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    cursor: pointer;
+
+    @include medium-desktop {
+      font-size: 1.4rem;
+    }
+
+    .news__img {
+      border-radius: 3px;
+      transition: 0.3s ease-out;
+
+      @include medium-desktop {
+        margin-right: 7px;
+      }
+    }
+
+    .news__txt {
+      @include medium-desktop {
+        margin-left: 0;
+      }
+
+      margin-left: 2rem;
+    }
+  }
+
+  .news__videos:hover .news__img {
+    filter: brightness(55%);
+  }
+
+  .news__videos:hover .news__txt {
+    color: $color-dark-blue;
+    text-decoration: none;
+  }
+
+  .news__videos:nth-child(2) {
+    padding-bottom: 9px;
+    border-bottom: 1px solid $color-black;
+  }
+
+  .news__advertisement {
+    grid-column: 1/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+
+    .news__adv-img {
+      width: 100%;
+    }
+  }
+
+  .news__articles {
+    grid-column: 1/5;
+
+    .news__art-txt {
+      display: flex;
+      font-size: 1.5rem;
+      padding: 1rem;
+      color: $color-matte-gray;
+      border-bottom: 1px solid $color-matte-gray;
+
+      &:hover {
+        color: $color-dark-blue;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      &:before {
+        font-size: 3.5rem;
+        font-weight: bold;
+        margin-right: 1.5rem;
+
+        @include medium-desktop {
+          font-size: 3.3rem;
+        }
+      }
+
+      &:first-child:before {
+        content: "1";
+      }
+
+      &:nth-child(2):before {
+        content: "2";
+      }
+
+      &:nth-child(3):before {
+        content: "3";
+      }
+
+      &:last-child:before {
+        content: "4";
+      }
+
+      @include medium-desktop {
+        align-items: center;
+        padding: 1.3rem 0;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  @include medium-desktop {
+    grid-column: 5/10;
+    margin-left: 2rem;
+  }
+}
