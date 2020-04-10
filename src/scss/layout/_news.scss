@@ -4,12 +4,6 @@
   grid-template-columns: repeat(9, minmax(min-content, 12rem));
   grid-template-rows: minmax(28rem, 0rem) repeat(3, 15rem);
 
-  // @include ipad {
-  //   grid-template-columns: repeat(5, 8.5rem) repeat(4, 7.5rem);
-  //   grid-template-rows: repeat(5, minmax(min-content, auto));
-  //   grid-row-gap: 2rem;
-  // }
-
   @include smaller-devices {
     display: flex;
     flex-direction: column;
@@ -29,6 +23,7 @@
   }
 
   @include medium-desktop {
+    grid-template-rows: 22rem repeat(3, 19rem);
     grid-row-gap: 1.5rem;
   }
 
@@ -49,17 +44,14 @@
 
     @include medium-desktop {
       grid-column: 1/5;
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
 
     .news__container--left {
       grid-column: 1/3;
       cursor: pointer;
-
-      // @include ipad {
-      //   display: none;
-      // }
 
       @include small-desktop {
         display: none;
@@ -91,7 +83,7 @@
       }
 
       .news__title-img {
-        margin: 1rem 0;
+        margin: 3px 0;
         border-radius: 3px;
 
         @include medium-desktop {
@@ -104,7 +96,7 @@
       }
 
       .news__desc {
-        font-size: 1rem;
+        font-size: 1.3rem;
         font-weight: initial;
 
         @include medium-desktop {
@@ -132,10 +124,6 @@
     .news__container--right {
       grid-column: 3/9;
       border-left: 1.5px solid $color-light-gray;
-
-      // @include ipad {
-      //   display: none;
-      // }
 
       @include small-desktop {
         display: flex;
@@ -197,11 +185,6 @@
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
 
-    // @include ipad {
-    //   width: 400px;
-    //   left: 0;
-    // }
-
     @include small-desktop {
       width: 100%;
       left: 0;
@@ -221,11 +204,6 @@
       }
     }
 
-    // @include ipad {
-    //   flex-direction: column;
-    //   justify-content: center;
-    // }
-
     @include small-desktop {
       grid-column: 1/7;
       flex-direction: column;
@@ -243,10 +221,6 @@
     .news__boxes {
       max-width: 50%;
 
-      // @include ipad {
-      //   max-width: 100%;
-      // }
-
       @include small-desktop {
         max-width: 440px;
         display: flex;
@@ -256,14 +230,10 @@
       }
 
       .news__boxes-titles {
-        color: $color-black;
         font-size: 1.4rem;
-
-        // @include ipad {
-        //   font-size: 1.5rem;
-        //   font-weight: 500;
-        //   letter-spacing: 1px;
-        // }
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        color: $color-black;
 
         @include smaller-devices {
           margin-bottom: 5px;
@@ -278,24 +248,9 @@
         }
       }
 
-      // .news__boxes > .news__boxes-titles:first-child {
-      //   @include ipad {
-      //     border-top: 1px solid #ccc;
-      //     padding-top: 7px;
-      //     width: 95%;
-      //   }
-      // }
-
       .news__video {
         display: flex;
         margin-top: 1rem;
-
-        // @include ipad {
-        //   border-bottom: 1px solid #ccc;
-        //   width: 95%;
-        //   padding-bottom: 1rem;
-        //   margin-top: 5px;
-        // }
 
         @include small-desktop {
           margin-top: 2px;
@@ -305,11 +260,6 @@
         .news__img {
           border-radius: 3px;
           transition: 0.3s ease-out;
-
-          // @include ipad {
-          //   width: 170px;
-          //   height: 85px;
-          // }
 
           @include small-desktop {
             border-radius: 2px;
@@ -327,10 +277,6 @@
           font-weight: bold;
           cursor: pointer;
 
-          // @include ipad {
-          //   max-width: 50%;
-          // }
-
           @include small-desktop {
             max-width: 300px;
           }
@@ -340,16 +286,13 @@
           }
 
           .news__video-title {
+            font-size: 1.1rem;
+            letter-spacing: 1px;
             color: $color-red;
 
             span {
               color: $color-black;
             }
-
-            // @include ipad {
-            //   font-size: 1.2rem;
-            //   letter-spacing: 1px;
-            // }
 
             @include smaller-devices {
               font-size: 1rem;
@@ -368,16 +311,11 @@
           }
 
           .news__video-txt {
-            font-size: 10px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            letter-spacing: 0.3px;
             color: $color-matte-gray;
             transition: 0.3s ease-out;
-
-            // @include ipad {
-            //   font-size: 1.3rem;
-            //   font-weight: 400;
-            //   line-height: 18px;
-            //   letter-spacing: 0.5px;
-            // }
 
             @include smaller-devices {
               font-size: 1rem !important;
@@ -428,14 +366,6 @@
       );
     grid-row-gap: 10px;
 
-    // @include ipad {
-    //   grid-template-columns: repeat(5, minmax(min-content, 6rem));
-    //   grid-template-rows: 15rem 2rem repeat(2, minmax(min-content, 5rem)) 20rem 2rem repeat(
-    //       1,
-    //       minmax(min-content, 5rem)
-    //     );
-    // }
-
     @include small-desktop {
       display: none;
     }
@@ -446,19 +376,7 @@
       height: 2rem;
       text-transform: uppercase;
       font-size: 1.5rem;
-
-      // @include ipad {
-      //   grid-column: 1/6;
-      //   grid-row: 2/3;
-      // }
     }
-
-    // .news__latest-title:nth-child(1) {
-    //   @include ipad {
-    //     grid-column: 1/6;
-    //     grid-row: 6/7;
-    //   }
-    // }
 
     .news__videos {
       grid-column: 1/5;
@@ -468,13 +386,6 @@
       font-size: 1.8rem;
       cursor: pointer;
 
-      // @include ipad {
-      //   grid-row: 3/4;
-      //   grid-column: 1/6;
-      //   font-size: 1.4rem;
-      //   justify-content: normal;
-      // }
-
       @include medium-desktop {
         font-size: 1.4rem;
       }
@@ -483,29 +394,19 @@
         border-radius: 3px;
         transition: 0.3s ease-out;
 
-        // @include ipad {
-        //   width: 50%;
-        // }
-
         @include medium-desktop {
           margin-right: 7px;
         }
       }
 
-      // .news__txt {
-      //   @include ipad {
-      //     width: 50%;
-      //     margin-left: 1.5rem;
-      //   }
-      // }
-    }
+      .news__txt {
+        @include medium-desktop {
+          margin-left: 0;
+        }
 
-    // .news__videos:nth-child(2) {
-    //   @include ipad {
-    //     grid-row: 4/5;
-    //     grid-column: 1/6;
-    //   }
-    // }
+        margin-left: 2rem;
+      }
+    }
 
     .news__videos:hover .news__img {
       filter: brightness(55%);
@@ -525,11 +426,6 @@
       grid-column: 1/5;
       margin: 1rem 0;
 
-      // @include ipad {
-      //   grid-row: 5/6;
-      //   grid-column: 1/6;
-      // }
-
       .news__adv-img {
         width: 100%;
         height: 100%;
@@ -539,22 +435,12 @@
     .news__articles {
       grid-column: 1/5;
 
-      // @include ipad {
-      //   grid-row: 7/8;
-      //   grid-column: 1/6;
-      // }
-
       .news__art-txt {
         display: flex;
         font-size: 1.5rem;
         padding: 1rem;
         color: $color-matte-gray;
         border-bottom: 1px solid $color-matte-gray;
-
-        // @include ipad {
-        //   font-size: 1.3rem;
-        //   padding: 5px;
-        // }
 
         &:hover {
           color: $color-dark-blue;
@@ -567,20 +453,10 @@
           font-weight: bold;
           margin-right: 1.5rem;
 
-          // @include ipad {
-          //   font-size: 3rem;
-          // }
-
           @include medium-desktop {
             font-size: 3.3rem;
           }
         }
-
-        // &:first-child {
-        //   @include ipad {
-        //     margin-top: -1rem;
-        //   }
-        // }
 
         &:first-child:before {
           content: "1";
@@ -612,23 +488,3 @@
     }
   }
 }
-
-// .news > .news__small-container:nth-child(9) {
-//   @include ipad {
-//     grid-row: 3/4;
-//   }
-// }
-
-// .news > .news__small-container:nth-child(10) {
-//   @include ipad {
-//     grid-row: 4/5;
-//     margin-top: -2rem;
-//   }
-// }
-
-// .news > .news__small-container:nth-child(11) {
-//   @include ipad {
-//     grid-row: 5/6;
-//     margin-top: -2rem;
-//   }
-// }

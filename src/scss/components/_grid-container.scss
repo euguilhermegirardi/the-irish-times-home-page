@@ -8,16 +8,7 @@
     [center-end] minmax(min-content, 1fr) [full-end];
 
   grid-row-gap: 1rem;
-  grid-template-rows: 10rem 12rem 18rem 5rem auto;
-
-  // @include ipad {
-  //   grid-template-rows: 8rem 9rem 14rem 5rem 130rem !important;
-  //   padding: 0 2rem;
-  // }
-
-  // @include ipad-pro-12 {
-  //   grid-template-rows: 10rem 9rem 15rem 5rem 79em;
-  // }
+  grid-template-rows: 10rem 8rem 18rem 5rem min-content;
 
   @include small-desktop {
     display: flex;
@@ -25,6 +16,6 @@
   }
 
   @include medium-desktop {
-    grid-template-rows: 10rem 8rem 15rem 5rem 80rem;
+    grid-template-rows: 10rem 8rem 15rem 5rem min-content;
   }
 }

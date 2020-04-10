@@ -2,17 +2,12 @@
   max-width: 1170px;
   margin: 0 auto;
 
-  // @include ipad {
-  //   max-width: 768px;
-  //   padding: 0 1rem;
-  // }
-
   @include smaller-devices {
     max-width: 320px;
   }
 
   @include small-desktop {
-    max-width: 481px;
+    max-width: 480px;
   }
 
   @include medium-desktop {
