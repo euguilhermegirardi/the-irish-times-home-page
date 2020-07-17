@@ -1,19 +1,75 @@
 # the-irish-times-home-page
 
-Home page built with CSS (Sass) Grid, Flexbox and JavaScript.
+This is a home page that I cloned from [**_The Irish Times_**](https://www.irishtimes.com/).
 
-1. Clone it,
-2. npm install,
-3. run 'gulp' (you might have a problem in this step... Here goes some tips if this errors happens):
-- Run 'npm rebuild node-sass' if this error appears: Node Sass could not find a binding for your current environment.
-- Run 'npm install gulp' in this project (npm install -g gulp) if this error appears 'gulp: The term 'gulp' is not recognized...'.
-4. go to localhost
+## About the project
 
-This project has:
+- This is a simple responsive home page.
 
-- Many techniques with CSS Grid and Flexbox that are used by real professionals,
-- Responsive for desktop, tablets and mobiles,
-- Sass control with BEM structure,
-- All the functionalities was created using VanillaJS only,
-- Gulp task runner was used to compile CSS and JS to minify the files,
-- It was tested in Google Chrome, Safari, Firefox and Opera.
+
+## The project
+
+In this project I only used pure CSS and VanillaJS with the latest recommendation for meta tags and SEO. I also used [**_Gulp_**](https://gulpjs.com/) to minifiy all my files. 
+
+**Home Page**
+
+![home-page](.github/home.png)
+
+**Search**
+
+![search](.github/search.png)
+
+**Dropdown**
+
+![dropdown](.github/dropdown.png)
+
+**Responsive**
+
+![resp](.github/resp.png)
+
+**Responsive**
+
+![resp2](.github/resp2.png)
+
+**Mobile Menu**
+
+![mobile-menu](.github/mobile-menu.png)
+
+**Mobile**
+
+![mobile](.github/mobile.png)
+
+## Getting started
+
+1.  Prerequisites
+
+- npm
+
+      npm install npm@latest -g
+
+2. Installation
+
+- Clone the repo
+
+      git clone https://github.com/euguilhermegirardi/the-irish-times-home-page.git
+
+3. Install NPM packages
+
+       npm install
+
+4. Run the application
+
+       open localhost
+       
+
+## Contributing
+
+1.  Fork the project
+2.  Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the branch (`git push origin feature/AmazingFeature`)
+5.  Open a pull request
+
+## License
+
+![MIT](https://img.shields.io/badge/License-MIT-blue.svg)
