@@ -48,10 +48,10 @@ function imgTask() {
 // Cachebusting TextTrackList
 const cbString = new Date().getTime();
 
-function cachBustTask() {
+function catchBustTask() {
   return src(['index.html'])
     .pipe(replace(/cb=\d+/g, 'cb=' + cbString))
-    .pipe(dest('.'));
+    .pipe(dest('dist/minified/'));
 }
 
 //Watch task
@@ -63,6 +63,6 @@ function watchTask() {
 // Default task
 exports.default = series(
   parallel(scssTask, jsTask, imgTask),
-  cachBustTask,
+  catchBustTask,
   watchTask
 )
